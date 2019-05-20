@@ -39,7 +39,7 @@ value of **10 folds** is suggested.
  - **Validation Split**: It is the percentage of the 
 training set allocated for creating the _dev set_ 
 (_development set_). We decided to split the initial 
-training set with a 80/20 ration, thus its value has 
+training set with a 80/20 ratio, thus its value has 
 been set to **0.2**.
 
  - **Test Validation Split**: It is the percentage of 
@@ -49,13 +49,31 @@ not used if we are using three files from the folding
 process (Train, Test Learned, and Test Unlearned). See 
 the **Folding Procedure** for a better explanation.
 
- - **Samples per Window**: It represents the number of 
-samples composing each window (i.e. each row of the 
+ - **Samples per Window** (``spw``): It represents the 
+number of samples composing each window (i.e. each row of the 
 input files) for which a label has been assigned 
 according to the _**do_windows**_ criteria. It has been 
 set to **20** by default, and it is dependent on how 
 the windowing procedure has been chosen. 
 
- - **Exclude Features**: If _true_, it allows to 
+ - **Exclude Features** (``exclude_features``): If 
+_true_, it allows to 
 exclude the some of the features, selecting them into 
-the variable ``feature select``
+the variable ``feature select``.
+
+ - **Include Features Only** 
+(``include_only_features``): On the contrary, if 
+_true_, it allows to selectively choose the features to 
+be loaded, selecting them into the variable ``feature 
+select``. N.B. ``include_only_features`` and 
+``exclude_features`` cannot be both true!
+
+ - **Epochs**
+  - **Number of epochs** (``maxepoch``): It is the 
+maximum number of epochs the neural network can be 
+trained. It is set by default to **100**
+  - **Patient** (``maxpatience``): It is a threshold 
+which aim is to stop the training process if the 
+accuracy does not improve for a certain number of 
+consecutive epochs. It is set to **10**, and it is 
+suggested to not change this value.
