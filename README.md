@@ -58,4 +58,4 @@ the windowing procedure has been chosen.
 
  - **Exclude Features**: If _true_, it allows to 
 exclude the some of the features, selecting them into 
-the variable ``feature select''
+the variable ``feature select``
