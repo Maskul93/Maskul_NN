@@ -9,7 +9,24 @@
   
   - **do_folds_intra_subject**: This function creates the folds to feeed the NN on the _**same patient**_.
   
-  
+## Windows Creation
+### Parameters
+ - ``sliding``: If true, it allows to use the sliding 
+windows approach.
+ - ``sliding_pace``: The name says everything. 
+ - ``predict_central_sample``: If true, it allows to 
+predict the central sample between two overlapping 
+windows. Indeed, the pace must be smaller than the 
+``window_size``.
+
+ - ``discard_transitions``: If true, it eliminates the 
+windows in which there is a transition in the label, 
+according to a threshold.
+ - ``threshold``: It is required to establish which 
+window needs to be discarded. A threshold equal to 
+**1** means that the labels in the window must be all 
+equal, otherwise the window will be discarded. 
+
 ## NN Description
 ### Hyperparameters
 
@@ -77,3 +94,23 @@ which aim is to stop the training process if the
 accuracy does not improve for a certain number of 
 consecutive epochs. It is set to **10**, and it is 
 suggested to not change this value.
+
+## Accuracy
+### Binary Classification
+The accuracy of the model for a **binary 
+classification**, which in this case is related to the 
+2-levels baographic signal, has made as follows:
+
+ 1. _Inputs_ and _Labels_ are loaded;
+ 2. _Outputs_ are computed from the inputs
+    - If ``output[i] >= 0.5``, that value is set to 
+``1``;
+    - If ``output[i] < 0.5``, that value is set to 
+``0``.
+ 3. The total number of outputs is computed;
+ 4. The number of correct outputs is computed;
+ 5. The percentage of correct over total outputs is the 
+**accuracy**.
+
+### Multiclass 
+Not implemented yet.
