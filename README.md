@@ -69,10 +69,10 @@ select``. N.B. ``include_only_features`` and
 ``exclude_features`` cannot be both true!
 
  - **Epochs**
-  - **Number of epochs** (``maxepoch``): It is the 
+   - **Number of epochs** (``maxepoch``): It is the 
 maximum number of epochs the neural network can be 
 trained. It is set by default to **100**
-  - **Patient** (``maxpatience``): It is a threshold 
+   - **Patient** (``maxpatience``): It is a threshold 
 which aim is to stop the training process if the 
 accuracy does not improve for a certain number of 
 consecutive epochs. It is set to **10**, and it is 
