@@ -18,7 +18,7 @@ step-by-step, an optimum weight in the _set of weight_.
 The optima could be either _global_ or _local_, and the 
 net must be able to find them. To do so, the net has to 
 "change" of a certain amount in each searching step, 
-and this quantity is called _**learnin rate**_. It has 
+and this quantity is called _**learning rate**_. It has 
 been set to a value of **0.1** by default.
 
  - **Batch Size**: This value defines the number of 
@@ -55,3 +55,7 @@ input files) for which a label has been assigned
 according to the _**do_windows**_ criteria. It has been 
 set to **20** by default, and it is dependent on how 
 the windowing procedure has been chosen. 
+
+ - **Exclude Features**: If _true_, it allows to 
+exclude the some of the features, selecting them into 
+the variable ``feature select''
