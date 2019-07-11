@@ -1,8 +1,7 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
-# In[1]:
-
+# In[403]:
 
 ##Import libraries
 import torch
@@ -25,40 +24,42 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 
-# In[25]:
-
+# In[604]:
 
 ##SETTINGS
 doTrain = True
 doEval = True
+doExtractBaso = False
 
-nfold = 5 #number of folds to train
+nfold = 23 #number of folds to train
 fold_offset = 1
 lr=0.01 #learning rate
 
 batch_size = 32
-val_split = .1 #trainset percentage allocated for devset
-test_val_split = .1 #trainset percentage allocated for test_val set (i.e. the test set of known patients)
+val_split = 0.2 #trainset percentage allocated for devset
+test_val_split = 0.1 #trainset percentage allocated for test_val set (i.e. the test set of known patients)
 
 #cwd = os.getcwd()
-cwd = "../subjects/min-max/windows_20/tr-True_sliding_20_c-False/folds_test"
+#cwd = "subjects/min-max/windows_20/tr-False_sliding_1_c-False/folds_inter_no_4_24_25/"
+cwd = "subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/folds_inter/"
 subject = 1 # serve per caricare le folds da cartelle diverse
 prefix_train = 'TrainFold'
 prefix_test = 'TestFold'
 
 spw=20 #samples per window
-nmuscles=12 #initial number of muscles acquired
+nmuscles=10 #initial number of muscles acquired
 
 #Enable/Disable shuffle on trainset/testset
 shuffle_train = False
 shuffle_test= False
 
 #Delete electrogonio signals
-exclude_features = False
+# 3 = Left Rectus Femuris; 5 = Left Goniometer; 9 = Right Rectus Femuris; 11 = Right Goniometer
+exclude_features = True
 #Only use electrogonio signals
 include_only_features = False
 #Features to selected/deselected for input to the networks
-features_select = [1,12] #1 to 4
+features_select = [9, 10] #1 to 4
 
 #Select which models to run. Insert comma separated values into 'model_select' var.
 #List. 0:'FF', 1:'FC2', 2:'FC2DP', 3:'FC3', 4:'FC3dp', 5:'Conv1d', 6:'MultiConv1d' 
@@ -69,19 +70,18 @@ features_select = [1,12] #1 to 4
 model_lst = ['FF','FC2','FC2DP','FC3','FC3dp','Conv1d','MultiConv1d',
              'MultiConv1d_2','MultiConv1d_3', 'MultiConv1d_4', 'MultiConv1d_5', 
              'FF2', 'CNN1', 'FF3', 'FF4', 'CNN2', 'FF5', 'FF6', 'CNN3', 'CNN1-FF5', 'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60']
-model_select = [11] 
+model_select = [14] 
 
 #Early stop settings
 maxepoch = 100
 maxpatience = 10
 
-use_cuda = False
+use_cuda = True
 use_gputil = False
 cuda_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-# In[3]:
-
+# In[605]:
 
 #CUDA
 
@@ -102,15 +102,13 @@ if use_gputil and torch.cuda.is_available():
     
 
 
-# In[4]:
-
+# In[606]:
 
 print('Is CUDA available? --> ' + str(torch.cuda.is_available()))
 print('Cuda Device: ' + str(cuda_device))
 
 
-# In[5]:
-
+# In[607]:
 
 #Seeds
 def setSeeds(seed):
@@ -121,11 +119,10 @@ def setSeeds(seed):
 setSeeds(0)
 
 
-# In[6]:
-
+# In[608]:
 
 #Prints header of beautifultable report for each fold
-def header(model_list,nmodel,nfold,traindataset,testdataset):
+def header(model_list,nmodel,nfold,traindataset,testdataset, testdataset_U):
     print('+++++++++++++++++++++++++++++++++++++++++++++++++')
     print('MODEL: '+model_list[nmodel])
     print('Fold: '+str(nfold))
@@ -133,11 +130,12 @@ def header(model_list,nmodel,nfold,traindataset,testdataset):
     shape = list(traindataset.x_data.shape)
     print('Trainset fold'+str(i)+' shape: '+str(shape[0])+'x'+str((shape[1]+1)))
     shape = list(testdataset.x_data.shape)
-    print('Testset fold'+str(i)+' shape: '+str(shape[0])+'x'+str((shape[1]+1))+'\n')
+    print('Testset (L) fold'+str(i)+' shape: '+str(shape[0])+'x'+str((shape[1]+1)))
+    shape = list(testdataset_U.x_data.shape)
+    print('Testset (U) fold' + str(i) + ' shape: ' + str(shape[0])+ 'x' + str((shape[1]+1)) +'\n')
 
 
-# In[7]:
-
+# In[609]:
 
 #Prints actual beautifultable for each fold
 def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_dev):
@@ -151,8 +149,7 @@ def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_d
     print(table)
 
 
-# In[8]:
-
+# In[610]:
 
 #Saves best model state on disk for each fold
 def save_checkpoint (state, is_best, filename, logfile):
@@ -167,8 +164,7 @@ def save_checkpoint (state, is_best, filename, logfile):
         logfile.write(msg + "\n")
 
 
-# In[9]:
-
+# In[611]:
 
 #Compute sklearn metrics: Recall, Precision, F1-score
 def pre_rec (loader, model, positiveLabel):
@@ -188,8 +184,7 @@ def pre_rec (loader, model, positiveLabel):
     return round(precision*100,3), round(recall*100,3), round(f1_score*100,3)
 
 
-# In[10]:
-
+# In[612]:
 
 #Calculates model accuracy. Predicted vs Correct.
 def accuracy (loader, model):
@@ -197,17 +192,16 @@ def accuracy (loader, model):
     correct=0
     with torch.no_grad():
         for i, data in enumerate(loader, 0):
-            inputs, labels = data
-            outputs = model(inputs)
-            outputs[outputs>=0.5] = 1
-            outputs[outputs<0.5] = 0
-            total += labels.size(0)
-            correct += (outputs == labels).sum().item()
-    return round((100 * correct / total),3)
+            inputs, labels = data    # Carica i dati
+            outputs = model(inputs)    # Tira fuori gli output
+            outputs[outputs>=0.5] = 1    # Se l'output è >= 0.5 --> outputs[i] = 1
+            outputs[outputs<0.5] = 0    # Se l'output è < 0.5 --> outputs[i] = 0
+            total += labels.size(0)     # Calcola i labels totali
+            correct += (outputs == labels).sum().item()    # Conta i corretti (quelli che matchano)
+    return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
 
 
-# In[11]:
-
+# In[613]:
 
 #Arrays to store metrics
 accs = np.empty([nfold,1])
@@ -242,8 +236,119 @@ def stds (vals):
     return stds
 
 
-# In[12]:
+# In[614]:
 
+## -- Salva il basografico predetto su un file sfruttando l'accuracy
+
+def save_predicted_baso(loader, model, subject_predict, model_select, num_fold):
+    print("predicting baso for subject " + str(subject_predict) + " ... ")
+    windows_length = 20
+    predicted_baso_windowed = []
+    with torch.no_grad():
+        
+        ## -- Estrae gli output di ciascuna window
+        for i, data, in enumerate(loader, 0):
+            inputs, labels = data
+            outputs = model(inputs)
+            outputs[outputs >= 0.5] = 1
+            outputs[outputs < 0.5] = 0
+            predicted_temp = outputs.tolist()
+            predicted_baso_windowed.extend(predicted_temp)
+        
+        predicted_baso_windowed = pd.DataFrame(predicted_baso_windowed)    # Converto in DataFrame
+        predicted_baso_windowed = predicted_baso_windowed.as_matrix()
+        
+        limit = len(predicted_baso_windowed)
+        predicted_baso = np.empty([limit*windows_length,1], dtype = int)
+        
+        count = 0
+        for j in range(0, limit):
+            predicted_baso[count:count+windows_length] = predicted_baso_windowed[j]
+            count += windows_length
+            
+        predicted_baso = pd.DataFrame(predicted_baso)
+        out_path = 'subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
+        if not os.path.exists(out_path):
+            os.makedirs(out_path)
+        #np.savetxt(out_path + 's' + str(subject_predict) + '_predicted.csv', predicted_baso, delimiter = ",")
+        predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
+
+
+# In[615]:
+
+## -- Salva il basografico predetto su un file sfruttando l'accuracy
+
+def save_predicted_baso_sliding(loader, model, subject_predict, model_select, num_fold):
+    print("predicting baso for subject " + str(subject_predict) + " ... ")
+    windows_length = 20
+    predicted_baso_windowed = []
+    with torch.no_grad():
+        
+        ## -- Estrae gli output di ciascuna window
+        for i, data, in enumerate(loader, 0):
+            inputs, labels = data
+            outputs = model(inputs)
+            outputs[outputs >= 0.5] = 1
+            outputs[outputs < 0.5] = 0
+            predicted_temp = outputs.tolist()
+            predicted_baso_windowed.extend(predicted_temp)
+        
+        predicted_baso_windowed = pd.DataFrame(predicted_baso_windowed)    # Converto in DataFrame
+        predicted_baso_windowed = predicted_baso_windowed.as_matrix()
+        
+        limit = len(predicted_baso_windowed)
+        
+        samples_predictions = np.empty([limit  + windows_length - 1,windows_length], dtype = int)
+        for i in range(0,limit  + windows_length - 1):
+            for j in range(0,windows_length):
+                samples_predictions[i,j] = -1
+
+        count = 0
+        for j in range(0, limit):
+            '''
+            sliding_window_prediction = np.empty([windows_length,1], dtype = int)
+            sliding_window_prediction[0:windows_length] = predicted_baso_windowed[j]
+            indent = "wp:    "
+            for i in range(0,j):
+                indent += "  "
+            print(indent + str(sliding_window_prediction.squeeze()))
+            count += windows_length
+            '''
+            for i in range(0, windows_length):
+                if (j+i < len(samples_predictions)):
+                    samples_predictions[j+i][windows_length-i-1] = predicted_baso_windowed[j]
+
+        #il seguente è un vettore di vettori in cui ogni elemento è composto 
+        #da tutte le predizioni delle finestre che comprendono il campione. 
+        # il valore -1 indica assenza di predizione, perchè i primi e gli ultimi campioni sono compresi in meno finestre
+        print("\nSamples predictions:")
+        print(samples_predictions)
+
+        #Per ogni campione la predizione vincente sarà il massimo tra gli 1 e gli 0 predetti
+        predicted_baso = np.empty([limit  + windows_length - 1,1], dtype = int)
+        count = 0
+        for sample_pred in samples_predictions:
+            zeros = len(np.where(sample_pred==0)[0])
+            ones = len(np.where(sample_pred==1)[0])
+            if (zeros > ones):
+                predicted_baso[count] = 0
+            elif (zeros < ones): 
+                predicted_baso[count] = 1
+            else:
+                predicted_baso[count] = not predicted_baso[count-1]
+            #print("0:" + str(zeros), "1:" + str(ones), str(predicted_baso[count]))
+            count += 1
+            
+        predicted_baso = pd.DataFrame(predicted_baso)
+        #out_path = 'subjects/min-max/windows_20-del_tr-False-slide-False-digits-4/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
+        out_path = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
+        if not os.path.exists(out_path):
+            os.makedirs(out_path)
+        #np.savetxt(out_path + 's' + str(subject_predict) + '_predicted.csv', predicted_baso, delimiter = ",")
+        predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
+
+
+# In[616]:
 
 #Shuffle
 def dev_shuffle (shuffle_train,shuffle_test,val_split,traindataset,testdataset):
@@ -263,6 +368,9 @@ def dev_shuffle (shuffle_train,shuffle_test,val_split,traindataset,testdataset):
     te_sampler = SubsetRandomSampler(test_indices)
     return tr_sampler,d_sampler,te_sampler
 
+# Questa funzione serve dividere i vari set una volta caricate le fold
+# In particolare, verrà usata solo per 'dev_loader', dato che lo split 
+# nei vari set è già stato fatto quando sono state create le fold
 def data_split (shuffle_train,shuffle_test,val_split,test_val_split,traindataset,testdataset):
     train_size = len(traindataset)
     test_size = len(testdataset)
@@ -282,13 +390,35 @@ def data_split (shuffle_train,shuffle_test,val_split,test_val_split,traindataset
     te_sampler = SubsetRandomSampler(test_indices)
     return tr_sampler,d_sampler,tv_sampler,te_sampler
 
+# Questa funzione serve se usiamo come input della rete 3 files:
+    # TRAINFOLD
+    # TESTFOLD_LEARNED
+    # TESTFOLD_UNLEARNED
+# L'unico file che deve essere effettivamente suddiviso, in questo caso, è il TRAINFOLD, dato che useremo
+# una percentuale 'val_split' (hyperparameter) per il validation, e una percentuale 1-'val_split'
+# per il vero e proprio training della rete.
+# La funzione da in output i sampler da utilizzare come parametri per il DataLoader:
+    # train_sampler
+    # dev_sampler
+def split_train ( val_split, traindataset ): 
+    train_size = len(traindataset)    # lunghezza del TRAIN_DATASET
+    train_indices = list(range(train_size))    # crea una lista che va da 0 -> lunghezza di train_size totale
+    dev_size = int(np.floor(val_split * train_size))    # Dimensione del dev_set
+    split = int(np.floor((train_size - dev_size)))    # Valore di split dei 2 set
 
-# In[27]:
+    train_indices_bis, dev_indices = train_indices[:split], train_indices[split:]    # Indici splittati
+        
+    # Sampler
+    tr_sampler = SubsetRandomSampler(train_indices_bis)    # Train Sampler
+    d_sampler = SubsetRandomSampler(dev_indices)    # Dev Sampler
+    return tr_sampler, d_sampler
 
+
+# In[617]:
 
 #Loads and appends all folds all at once
 trainfolds = []    # Train set
-testfolds = []    # Test set (LEARNED)
+testfolds_L = []    # Test set (LEARNED)
 testfolds_U = []    # Test set (UNLEARNED)
 
 col_select = np.array([])
@@ -305,17 +435,29 @@ for i in range (0,spw*nmuscles,nmuscles):
 if exclude_features & (not include_only_features): #delete gonio
     for j in range(fold_offset,fold_offset + nfold):
         print("Loading fold " + str(j))
-        traindata = pd.read_table(os.path.join(cwd, prefix_train + str(j)+'.csv'),sep=',',header=None,dtype=np.float32,usecols=[i for i in cols if i not in col_select.astype(int)])
+        traindata = pd.read_csv(os.path.join(cwd, prefix_train + '_' + str(j)+'.csv'),sep=',',header=None,dtype=np.float32,usecols=[i for i in cols if i not in col_select.astype(int)])
         trainfolds.append(traindata)
-        testdata = pd.read_table(os.path.join(cwd, prefix_test + str(j)+'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i not in col_select.astype(int)])
-        testfolds.append(testdata) 
+        testdata_L = pd.read_csv(os.path.join(cwd, prefix_test + '_L_' + str(j)+'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i not in col_select.astype(int)])
+        testfolds_L.append(testdata_L) 
+        testdata_U = pd.read_csv(os.path.join(cwd, prefix_test + '_U_' + str(j) +'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i not in col_select.astype(int)])
+        testfolds_U.append(testdata_U)
+        print('Train dataset: ' + str(len(traindata)) + ' windows;')
+        print('Test dataset (LEARNED): ' + str(len(testdata_L)) + ' windows;')
+        print('Test dataset (UNLEARNED) ' + str(len(testdata_U)) + ' windows.')
+        
 elif include_only_features & (not exclude_features): #only gonio
     for j in range(fold_offset, fold_offset + nfold):
         print("Loading fold " + str(j))
-        traindata = pd.read_table(os.path.join(cwd, prefix_train + str(j)+'.csv'),sep=',',header=None,dtype=np.float32,usecols=[i for i in cols if i in col_select.astype(int)])
-        testdata = pd.read_table(os.path.join(cwd, prefix_test + str(j)+'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i in col_select.astype(int)])
+        traindata = pd.read_csv(os.path.join(cwd, prefix_train + '_' + str(j)+'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i in col_select.astype(int)])
+        testdata_L = pd.read_csv(os.path.join(cwd, prefix_test + '_L_'+ str(j)+'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i in col_select.astype(int)])
+        testdata_U = pd.read_csv(os.path.join(cwd, prefix_test + '_U_' + str(j) +'.csv'),sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i in col_select.astype(int)])
         trainfolds.append(traindata)
-        testfolds.append(testdata) 
+        testfolds_L.append(testdata_L)
+        testfolds_U.append(testdata_U)
+        print('Train dataset: ' + str(len(traindata)) + ' windows;')
+        print('Test dataset (LEARNED): ' + str(len(testdata)) + ' windows;')
+        print('Test dataset (UNLEARNED) ' + str(len(testdata_U)) + ' windows.')
+        
 elif (not include_only_features) & (not exclude_features): 
     for j in range(fold_offset,fold_offset + nfold):
         print("Loading fold " + str(j))
@@ -323,7 +465,7 @@ elif (not include_only_features) & (not exclude_features):
         testdata = pd.read_csv(os.path.join(cwd, prefix_test + '_L_' + str(j) +'.csv'),sep=',',header=None,dtype=np.float32)
         testdata_U = pd.read_csv(os.path.join(cwd, prefix_test + '_U_' + str(j) +'.csv'),sep=',',header=None,dtype=np.float32)
         trainfolds.append(traindata)
-        testfolds.append(testdata)
+        testfolds_L.append(testdata)
         testfolds_U.append(testdata_U)    # Aggiunto testfold UNLEARNED 
         print('Train dataset: ' + str(len(traindata)) + ' windows;')
         print('Test dataset (LEARNED): ' + str(len(testdata)) + ' windows;')
@@ -331,18 +473,68 @@ elif (not include_only_features) & (not exclude_features):
 else:
     raise ValueError('use_gonio and del_gonio cannot be both True')
 
+nmuscles=int((len(traindata.columns)-1)/spw)
 print('\nEach window is composed by ' + str(len(traindata.columns)) + ' samples.')
 print('The number of muscles is ' + str(nmuscles))
 
 
-# In[14]:
+# In[618]:
 
+## -- Carica il soggetto su cui vuoi predire il basografico
+
+nmuscles = 10
+subject_predict = 1
+#directory_windows = '../subjects/min-max/windows_20/tr-False_sliding_1_c-False/'
+directory_windows = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/'
+subj_prefix = 's'
+subj_suffix = '_norm_windows_20.csv'
+file = directory_windows + subj_prefix + str(subject_predict) + subj_suffix
+
+if doExtractBaso:
+    if exclude_features & (not include_only_features): #delete gonio
+        for j in range(fold_offset,fold_offset + nfold):
+            testfolds_U = []
+
+        #for i in range(spw*nmuscles,200):
+        #    col_select = np.append(col_select,i)
+
+#         for i in range (0,spw*nmuscles,nmuscles):
+#             for muscle in features_select:
+#                 col_select = np.append(col_select,muscle -1 + i)
+#             cols=np.arange(0,spw*nmuscles+1)
+        
+        cols = [i for i in range(0,201)]
+        
+        col_select = []
+        for i in range(0,200,nmuscles):
+            col_select.append(8 + i)
+            col_select.append(9 + i)
+        
+        cols = np.asarray(cols)
+        col_select = np.asarray(col_select)
+        
+        print("Loading Subject " + str(subject_predict))
+        testdata_U = pd.read_csv(file,sep=',',header=None,dtype=np.float32, usecols=[i for i in cols if i not in col_select.astype(int)])
+        testfolds_U.append(testdata_U)
+        #testdata_U = pd.read_csv(file,sep=',',header=None,dtype=np.float32)
+        #testfolds_U.append(testdata_U)
+        print('Subject ' + str(subject_predict) + ' loaded: ' + str(len(testdata_U)) + ' windows.')
+
+        nmuscles=int((len(traindata.columns)-1)/spw)
+        print('\nEach window is composed by ' + str(len(testdata_U.columns)) + ' samples.')
+        print('The number of muscles is ' + str(nmuscles))
+
+
+# In[619]:
 
 nmuscles=int((len(traindata.columns)-1)/spw) #used for layer dimensions and stride CNNs
+#trainfolds = None
+#traindata = None
+#import gc
+#gc.collect()
 
 
-# In[15]:
-
+# In[620]:
 
 import models
 from models import *
@@ -351,8 +543,7 @@ models._nmuscles = nmuscles
 models._batch_size = batch_size
 
 
-# In[16]:
-
+# In[621]:
 
 print(models._nmuscles)
 
@@ -369,8 +560,7 @@ def testdimensions():
 #testdimensions()
 
 
-# In[17]:
-
+# In[622]:
 
 fieldnames = ['Fold','Acc_L', 'Acc_U',
               'R_0_U','R_1_U',
@@ -417,9 +607,26 @@ def train_test():
                         return self.x_data[index], self.y_data[index]
                     def __len__(self):
                         return self.len
-                class Testdataset(Dataset):
+                
+                # Classe per il Testset LEARNED
+                class Testdataset_L(Dataset):
                     def __init__(self):
-                        self.data=testfolds[i-1]
+                        self.data=testfolds_L[i-1]
+                        self.x_data=torch.from_numpy(np.asarray(self.data.iloc[:, 0:-1]))
+                        self.len=self.data.shape[0]
+                        self.y_data = torch.from_numpy(np.asarray(self.data.iloc[:, [-1]]))
+                        if (use_cuda):
+                            self.x_data = self.x_data.cuda()
+                            self.y_data = self.y_data.cuda()
+                    def __getitem__(self, index):
+                        return self.x_data[index], self.y_data[index]
+                    def __len__(self):
+                        return self.len
+                
+                # Classe per il Testset UNLEARNED
+                class Testdataset_U(Dataset):
+                    def __init__(self):
+                        self.data=testfolds_U[i-1]
                         self.x_data=torch.from_numpy(np.asarray(self.data.iloc[:, 0:-1]))
                         self.len=self.data.shape[0]
                         self.y_data = torch.from_numpy(np.asarray(self.data.iloc[:, [-1]]))
@@ -431,26 +638,46 @@ def train_test():
                     def __len__(self):
                         return self.len
 
-                traindataset = Traindataset()
-                testdataset = Testdataset()
-                testdataset_U = Testdataset()    # Aggiunto, relativo agli UNLEARNED
+                ## DEFINISCO I DATASET DA CARICARE    
+                traindataset = Traindataset()    # Train dataset
+                testdataset = Testdataset_L()    # Test dataset LEARNED
+                testdataset_U = Testdataset_U()    # Test dataset UNLEARNED
 
-                header(model_lst,k,i,traindataset,testdataset)
+                header( model_lst, k, i, traindataset, testdataset, testdataset_U)
 
                 #train_sampler,dev_sampler,test_sampler=dev_shuffle(shuffle_train,shuffle_test,val_split,traindataset,testdataset)
-                train_sampler,dev_sampler,test_val_sampler,test_sampler=data_split(shuffle_train,shuffle_test,val_split,test_val_split,traindataset,testdataset)
+                #train_sampler,dev_sampler,test_val_sampler,test_sampler=data_split(shuffle_train,shuffle_test,val_split,test_val_split,traindataset,testdataset)
                 
-                #loaders
-                train_loader = torch.utils.data.DataLoader(traindataset, batch_size=batch_size, 
-                                                           sampler=train_sampler,drop_last=True)
-                test_val_loader = torch.utils.data.DataLoader(testdataset, batch_size=batch_size,
-                                                                sampler=test_val_sampler,drop_last=True)
+                ## CREO I SAMPLER PER DIVIDERE IL TRAINDASTASET
+                tr_sampler, d_sampler = split_train(val_split, traindataset)
+                
+                ## LOADERS
+                # torch.utils.data.DataLoader deve avere come argomenti:
+                    # dataset -> quello che dobbiamo caricare
+                    # batch_size -> 'batch_size' definito negli hyperparameter della rete
+                    # drop_last = True -> Se la lunghezza del dataset non è divisibile per 'batch_size', 
+                    # l'ultimo batch viene eliminato
+                # 'dev_loader e 'train_loader' hanno bisogno anche di
+                    # sampler = dev_sampler (una certa parte del trainset 
+                    # deve essere usata come 'dev_set')
+                
+                # Training Set
+                train_loader = torch.utils.data.DataLoader(traindataset, batch_size = batch_size, 
+                                                          sampler = tr_sampler, drop_last = True)
+                print('Train Set dimension: ' + str(len(train_loader)))
+                # Development Set
                 dev_loader = torch.utils.data.DataLoader(traindataset, batch_size=batch_size, 
-                                                           sampler=dev_sampler,drop_last=True)
+                                                           sampler = d_sampler, drop_last=True)
+                print('Dev Set dimension: ' + str(len(dev_loader)))
+                # Testset LEARNED
+                test_val_loader = torch.utils.data.DataLoader(testdataset, batch_size=batch_size,
+                                                                drop_last=True)
+                print('Test Set (L) dimension: ' + str(len(test_val_loader)))
+                # Testset UNLEARNED
+                test_loader = torch.utils.data.DataLoader(testdataset_U, batch_size = batch_size, 
+                                                          drop_last = True)
+                print('Test Set (U) dimension: ' + str(len(test_loader)))
                 
-                # Questo l'ho cambiato da 'testdataset' a 'testdataset_U'
-                test_loader = torch.utils.data.DataLoader(testdataset_U, batch_size=batch_size,
-                                                                sampler=test_sampler,drop_last=True)
                 modelClass = "Model" + str(k)
                 model = eval(modelClass)()
                 
@@ -459,7 +686,8 @@ def train_test():
 
                 if doTrain:
                     
-                    criterion = nn.BCELoss(size_average=True)
+                    # criterion = nn.BCELoss(size_average=True)
+                    criterion = nn.BCELoss(reduction = 'mean')    # Cambiato perché dava un warning (size_average era un vecchio metodo in Pytorch)
                     optimizer = torch.optim.SGD(model.parameters(), lr)    
                     msg = 'Accuracy on test set before training: '+str(accuracy(test_loader, model))+'\n'
                     print(msg)
@@ -521,6 +749,7 @@ def train_test():
                         model.cpu()
                     accuracy_dev = state['best_acc_dev']
                     model.eval()
+                    
                     acctest = (accuracy(test_loader, model))
                     acctest_val = (accuracy(test_val_loader, model))
                     accs[i-1] = acctest
@@ -574,6 +803,25 @@ def train_test():
                     logfile.write(str(table) + "\n----------------------------------------------------------------------\n")
                     t1 = time.time()
                     times[i-1] = int(t1-t0)
+                    
+                    ## -- Estrai il Basografico
+                
+                fold_predicted = fold_offset
+                if doExtractBaso:
+                    if use_cuda:                        
+                        state = torch.load(os.path.join(folder,'F'+str(fold_predicted)+'best.pth.tar'))
+                    else:
+                        state = torch.load(os.path.join(folder,'F'+str(fold_predicted)+'best.pth.tar'), map_location=lambda storage, loc: storage)
+                    stop_epoch = state['epoch']
+                    model.load_state_dict(state['state_dict'])
+                    if not use_cuda:
+                        model.cpu()
+                    accuracy_dev = state['best_acc_dev']
+                    model.eval()
+                    
+                    ## -- QUESTO DEVI CONTROLLARLO! SE ESCE CHE i È DIVERSO DALLA FOLD DEVI RIFARE TUTTO!
+                    print('F'+str(fold_predicted)+'best.pth.tar')
+                    predicted_baso = save_predicted_baso(test_loader, model, subject_predict, model_lst[k], fold_predicted)   
             
             duration = str(datetime.timedelta(seconds=np.sum(times)))
             writer.writerow({})
@@ -627,8 +875,7 @@ def train_test():
         
 
 
-# In[18]:
-
+# In[623]:
 
 nmuscles=int((len(traindata.columns)-1)/spw)
 if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available():
@@ -638,4 +885,14 @@ if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available
 else:
     print('I am NOT using CUDA: SUCCESS!')
     train_test()
+
+
+# In[ ]:
+
+
+
+
+# In[ ]:
+
+
 
