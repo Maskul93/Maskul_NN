@@ -31,7 +31,7 @@ doTrain = True
 doEval = True
 doExtractBaso = False
 
-nfold = 1 #number of folds to train
+nfold = 23 #number of folds to train
 fold_offset = 1
 lr=0.01 #learning rate
 
