@@ -198,7 +198,6 @@ def accuracy (loader, model):
             outputs[outputs<0.5] = 0    # Se l'output è < 0.5 --> outputs[i] = 0
             total += labels.size(0)     # Calcola i labels totali
             correct += (outputs == labels).sum().item()    # Conta i corretti (quelli che matchano)
-    print(correct, total)
     return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
 
 
