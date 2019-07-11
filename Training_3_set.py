@@ -76,7 +76,7 @@ model_select = [14]
 maxepoch = 100
 maxpatience = 10
 
-use_cuda = False
+use_cuda = True
 use_gputil = False
 cuda_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
