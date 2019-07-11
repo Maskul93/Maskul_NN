@@ -76,7 +76,7 @@ model_select = [14]
 maxepoch = 100
 maxpatience = 10
 
-use_cuda = True
+use_cuda = False
 use_gputil = False
 cuda_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -198,7 +198,8 @@ def accuracy (loader, model):
             outputs[outputs<0.5] = 0    # Se l'output è < 0.5 --> outputs[i] = 0
             total += labels.size(0)     # Calcola i labels totali
             correct += (outputs == labels).sum().item()    # Conta i corretti (quelli che matchano)
-    return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
+#    return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
+    return (100 * correct / total)
 
 
 # In[613]:
