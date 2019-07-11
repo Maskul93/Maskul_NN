@@ -31,7 +31,7 @@ doTrain = True
 doEval = True
 doExtractBaso = False
 
-nfold = 23 #number of folds to train
+nfold = 1 #number of folds to train
 fold_offset = 1
 lr=0.01 #learning rate
 
@@ -721,7 +721,7 @@ def train_test():
                                 #print(msg)
                                 #logfile.write(msg + "\n")        
                         accdev = (accuracy(dev_loader, model))
-                        msg = 'Accuracy on dev set:' + str(accdev)
+                        msg = 'Accuracy on dev set:' + '%.3f' %(accdev)
                         print(msg)
                         logfile.write(msg + "\n")        
                         is_best = bool(accdev > best_acc_dev)
