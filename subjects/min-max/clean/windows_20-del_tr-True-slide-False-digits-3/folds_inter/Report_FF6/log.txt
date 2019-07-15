@@ -1,0 +1,4099 @@
+Accuracy on test set before training: 60.95
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.371
+[1,  6000] loss: 1.365
+[1,  8000] loss: 1.351
+[1, 10000] loss: 1.320
+Accuracy on dev set:75.011
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.153
+[2,  4000] loss: 0.871
+[2,  6000] loss: 0.621
+[2,  8000] loss: 0.538
+[2, 10000] loss: 0.511
+Accuracy on dev set:90.141
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.494
+[3,  4000] loss: 0.482
+[3,  6000] loss: 0.471
+[3,  8000] loss: 0.471
+[3, 10000] loss: 0.447
+Accuracy on dev set:91.062
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.444
+[4,  4000] loss: 0.440
+[4,  6000] loss: 0.439
+[4,  8000] loss: 0.435
+[4, 10000] loss: 0.426
+Accuracy on dev set:91.838
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.415
+[5,  4000] loss: 0.411
+[5,  6000] loss: 0.412
+[5,  8000] loss: 0.406
+[5, 10000] loss: 0.407
+Accuracy on dev set:92.163
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.395
+[6,  4000] loss: 0.387
+[6,  6000] loss: 0.386
+[6,  8000] loss: 0.384
+[6, 10000] loss: 0.391
+Accuracy on dev set:92.237
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.377
+[7,  4000] loss: 0.376
+[7,  6000] loss: 0.370
+[7,  8000] loss: 0.362
+[7, 10000] loss: 0.374
+Accuracy on dev set:92.320
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.368
+[8,  4000] loss: 0.364
+[8,  6000] loss: 0.357
+[8,  8000] loss: 0.357
+[8, 10000] loss: 0.351
+Accuracy on dev set:92.330
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.344
+[9,  4000] loss: 0.348
+[9,  6000] loss: 0.359
+[9,  8000] loss: 0.349
+[9, 10000] loss: 0.343
+Accuracy on dev set:92.627
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.340
+[10,  4000] loss: 0.344
+[10,  6000] loss: 0.338
+[10,  8000] loss: 0.337
+[10, 10000] loss: 0.341
+Accuracy on dev set:92.812
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.337
+[11,  4000] loss: 0.335
+[11,  6000] loss: 0.338
+[11,  8000] loss: 0.327
+[11, 10000] loss: 0.321
+Accuracy on dev set:92.965
+=> Saving a new best. Epoch: 11
+[12,  2000] loss: 0.333
+[12,  4000] loss: 0.324
+[12,  6000] loss: 0.326
+[12,  8000] loss: 0.321
+[12, 10000] loss: 0.316
+Accuracy on dev set:92.886
+=> Validation accuracy did not improve. Epoch: 12
+[13,  2000] loss: 0.317
+[13,  4000] loss: 0.323
+[13,  6000] loss: 0.313
+[13,  8000] loss: 0.315
+[13, 10000] loss: 0.306
+Accuracy on dev set:92.690
+=> Validation accuracy did not improve. Epoch: 13
+[14,  2000] loss: 0.309
+[14,  4000] loss: 0.309
+[14,  6000] loss: 0.304
+[14,  8000] loss: 0.311
+[14, 10000] loss: 0.308
+Accuracy on dev set:93.242
+=> Saving a new best. Epoch: 14
+[15,  2000] loss: 0.306
+[15,  4000] loss: 0.298
+[15,  6000] loss: 0.307
+[15,  8000] loss: 0.297
+[15, 10000] loss: 0.298
+Accuracy on dev set:93.101
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.293
+[16,  4000] loss: 0.291
+[16,  6000] loss: 0.298
+[16,  8000] loss: 0.298
+[16, 10000] loss: 0.296
+Accuracy on dev set:92.636
+=> Validation accuracy did not improve. Epoch: 16
+[17,  2000] loss: 0.292
+[17,  4000] loss: 0.296
+[17,  6000] loss: 0.292
+[17,  8000] loss: 0.284
+[17, 10000] loss: 0.290
+Accuracy on dev set:93.457
+=> Saving a new best. Epoch: 17
+[18,  2000] loss: 0.291
+[18,  4000] loss: 0.286
+[18,  6000] loss: 0.285
+[18,  8000] loss: 0.281
+[18, 10000] loss: 0.283
+Accuracy on dev set:93.865
+=> Saving a new best. Epoch: 18
+[19,  2000] loss: 0.281
+[19,  4000] loss: 0.287
+[19,  6000] loss: 0.282
+[19,  8000] loss: 0.278
+[19, 10000] loss: 0.278
+Accuracy on dev set:93.242
+=> Validation accuracy did not improve. Epoch: 19
+[20,  2000] loss: 0.274
+[20,  4000] loss: 0.275
+[20,  6000] loss: 0.278
+[20,  8000] loss: 0.279
+[20, 10000] loss: 0.280
+Accuracy on dev set:94.110
+=> Saving a new best. Epoch: 20
+[21,  2000] loss: 0.272
+[21,  4000] loss: 0.268
+[21,  6000] loss: 0.270
+[21,  8000] loss: 0.273
+[21, 10000] loss: 0.276
+Accuracy on dev set:93.808
+=> Validation accuracy did not improve. Epoch: 21
+[22,  2000] loss: 0.266
+[22,  4000] loss: 0.272
+[22,  6000] loss: 0.273
+[22,  8000] loss: 0.269
+[22, 10000] loss: 0.266
+Accuracy on dev set:93.987
+=> Validation accuracy did not improve. Epoch: 22
+[23,  2000] loss: 0.274
+[23,  4000] loss: 0.264
+[23,  6000] loss: 0.270
+[23,  8000] loss: 0.260
+[23, 10000] loss: 0.265
+Accuracy on dev set:92.994
+=> Validation accuracy did not improve. Epoch: 23
+[24,  2000] loss: 0.265
+[24,  4000] loss: 0.267
+[24,  6000] loss: 0.262
+[24,  8000] loss: 0.256
+[24, 10000] loss: 0.266
+Accuracy on dev set:94.011
+=> Validation accuracy did not improve. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.264
+[25,  6000] loss: 0.264
+[25,  8000] loss: 0.256
+[25, 10000] loss: 0.261
+Accuracy on dev set:94.258
+=> Saving a new best. Epoch: 25
+[26,  2000] loss: 0.255
+[26,  4000] loss: 0.253
+[26,  6000] loss: 0.264
+[26,  8000] loss: 0.263
+[26, 10000] loss: 0.256
+Accuracy on dev set:93.488
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.262
+[27,  4000] loss: 0.255
+[27,  6000] loss: 0.257
+[27,  8000] loss: 0.251
+[27, 10000] loss: 0.256
+Accuracy on dev set:94.385
+=> Saving a new best. Epoch: 27
+[28,  2000] loss: 0.257
+[28,  4000] loss: 0.258
+[28,  6000] loss: 0.253
+[28,  8000] loss: 0.252
+[28, 10000] loss: 0.256
+Accuracy on dev set:94.048
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.255
+[29,  4000] loss: 0.253
+[29,  6000] loss: 0.252
+[29,  8000] loss: 0.252
+[29, 10000] loss: 0.254
+Accuracy on dev set:93.712
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.254
+[30,  4000] loss: 0.256
+[30,  6000] loss: 0.244
+[30,  8000] loss: 0.249
+[30, 10000] loss: 0.250
+Accuracy on dev set:94.155
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.248
+[31,  4000] loss: 0.251
+[31,  6000] loss: 0.245
+[31,  8000] loss: 0.250
+[31, 10000] loss: 0.251
+Accuracy on dev set:93.739
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.242
+[32,  4000] loss: 0.246
+[32,  6000] loss: 0.250
+[32,  8000] loss: 0.252
+[32, 10000] loss: 0.248
+Accuracy on dev set:94.506
+=> Saving a new best. Epoch: 32
+[33,  2000] loss: 0.248
+[33,  4000] loss: 0.242
+[33,  6000] loss: 0.242
+[33,  8000] loss: 0.250
+[33, 10000] loss: 0.246
+Accuracy on dev set:93.532
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.246
+[34,  4000] loss: 0.241
+[34,  6000] loss: 0.250
+[34,  8000] loss: 0.244
+[34, 10000] loss: 0.243
+Accuracy on dev set:94.449
+=> Validation accuracy did not improve. Epoch: 34
+[35,  2000] loss: 0.244
+[35,  4000] loss: 0.247
+[35,  6000] loss: 0.243
+[35,  8000] loss: 0.243
+[35, 10000] loss: 0.241
+Accuracy on dev set:94.542
+=> Saving a new best. Epoch: 35
+[36,  2000] loss: 0.243
+[36,  4000] loss: 0.244
+[36,  6000] loss: 0.243
+[36,  8000] loss: 0.241
+[36, 10000] loss: 0.237
+Accuracy on dev set:94.634
+=> Saving a new best. Epoch: 36
+[37,  2000] loss: 0.235
+[37,  4000] loss: 0.243
+[37,  6000] loss: 0.245
+[37,  8000] loss: 0.239
+[37, 10000] loss: 0.234
+Accuracy on dev set:94.733
+=> Saving a new best. Epoch: 37
+[38,  2000] loss: 0.240
+[38,  4000] loss: 0.239
+[38,  6000] loss: 0.237
+[38,  8000] loss: 0.235
+[38, 10000] loss: 0.242
+Accuracy on dev set:94.317
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.235
+[39,  4000] loss: 0.237
+[39,  6000] loss: 0.238
+[39,  8000] loss: 0.241
+[39, 10000] loss: 0.237
+Accuracy on dev set:92.069
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.238
+[40,  4000] loss: 0.234
+[40,  6000] loss: 0.237
+[40,  8000] loss: 0.230
+[40, 10000] loss: 0.241
+Accuracy on dev set:94.056
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.237
+[41,  4000] loss: 0.238
+[41,  6000] loss: 0.234
+[41,  8000] loss: 0.231
+[41, 10000] loss: 0.232
+Accuracy on dev set:92.929
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.239
+[42,  4000] loss: 0.238
+[42,  6000] loss: 0.235
+[42,  8000] loss: 0.230
+[42, 10000] loss: 0.229
+Accuracy on dev set:94.815
+=> Saving a new best. Epoch: 42
+[43,  2000] loss: 0.233
+[43,  4000] loss: 0.233
+[43,  6000] loss: 0.230
+[43,  8000] loss: 0.235
+[43, 10000] loss: 0.235
+Accuracy on dev set:94.172
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.233
+[44,  4000] loss: 0.231
+[44,  6000] loss: 0.231
+[44,  8000] loss: 0.234
+[44, 10000] loss: 0.227
+Accuracy on dev set:93.904
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.235
+[45,  4000] loss: 0.224
+[45,  6000] loss: 0.233
+[45,  8000] loss: 0.229
+[45, 10000] loss: 0.230
+Accuracy on dev set:94.756
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.233
+[46,  4000] loss: 0.227
+[46,  6000] loss: 0.224
+[46,  8000] loss: 0.235
+[46, 10000] loss: 0.228
+Accuracy on dev set:94.657
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.228
+[47,  4000] loss: 0.224
+[47,  6000] loss: 0.231
+[47,  8000] loss: 0.226
+[47, 10000] loss: 0.229
+Accuracy on dev set:93.964
+=> Validation accuracy did not improve. Epoch: 47
+[48,  2000] loss: 0.226
+[48,  4000] loss: 0.227
+[48,  6000] loss: 0.228
+[48,  8000] loss: 0.228
+[48, 10000] loss: 0.228
+Accuracy on dev set:94.824
+=> Saving a new best. Epoch: 48
+[49,  2000] loss: 0.229
+[49,  4000] loss: 0.224
+[49,  6000] loss: 0.228
+[49,  8000] loss: 0.228
+[49, 10000] loss: 0.223
+Accuracy on dev set:94.733
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.229
+[50,  4000] loss: 0.223
+[50,  6000] loss: 0.234
+[50,  8000] loss: 0.219
+[50, 10000] loss: 0.224
+Accuracy on dev set:94.779
+=> Validation accuracy did not improve. Epoch: 50
+[51,  2000] loss: 0.224
+[51,  4000] loss: 0.219
+[51,  6000] loss: 0.232
+[51,  8000] loss: 0.226
+[51, 10000] loss: 0.223
+Accuracy on dev set:94.718
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.221
+[52,  4000] loss: 0.220
+[52,  6000] loss: 0.225
+[52,  8000] loss: 0.225
+[52, 10000] loss: 0.228
+Accuracy on dev set:94.869
+=> Saving a new best. Epoch: 52
+[53,  2000] loss: 0.221
+[53,  4000] loss: 0.220
+[53,  6000] loss: 0.226
+[53,  8000] loss: 0.227
+[53, 10000] loss: 0.226
+Accuracy on dev set:94.079
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.222
+[54,  4000] loss: 0.223
+[54,  6000] loss: 0.219
+[54,  8000] loss: 0.224
+[54, 10000] loss: 0.223
+Accuracy on dev set:94.498
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.222
+[55,  4000] loss: 0.228
+[55,  6000] loss: 0.222
+[55,  8000] loss: 0.219
+[55, 10000] loss: 0.220
+Accuracy on dev set:94.544
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.217
+[56,  4000] loss: 0.217
+[56,  6000] loss: 0.222
+[56,  8000] loss: 0.221
+[56, 10000] loss: 0.222
+Accuracy on dev set:94.549
+=> Validation accuracy did not improve. Epoch: 56
+[57,  2000] loss: 0.222
+[57,  4000] loss: 0.223
+[57,  6000] loss: 0.215
+[57,  8000] loss: 0.218
+[57, 10000] loss: 0.223
+Accuracy on dev set:94.523
+=> Validation accuracy did not improve. Epoch: 57
+[58,  2000] loss: 0.216
+[58,  4000] loss: 0.221
+[58,  6000] loss: 0.221
+[58,  8000] loss: 0.220
+[58, 10000] loss: 0.218
+Accuracy on dev set:94.720
+=> Validation accuracy did not improve. Epoch: 58
+[59,  2000] loss: 0.217
+[59,  4000] loss: 0.219
+[59,  6000] loss: 0.218
+[59,  8000] loss: 0.221
+[59, 10000] loss: 0.215
+Accuracy on dev set:94.692
+=> Validation accuracy did not improve. Epoch: 59
+[60,  2000] loss: 0.221
+[60,  4000] loss: 0.216
+[60,  6000] loss: 0.225
+[60,  8000] loss: 0.215
+[60, 10000] loss: 0.213
+Accuracy on dev set:94.230
+=> Validation accuracy did not improve. Epoch: 60
+[61,  2000] loss: 0.214
+[61,  4000] loss: 0.213
+[61,  6000] loss: 0.218
+[61,  8000] loss: 0.218
+[61, 10000] loss: 0.218
+Accuracy on dev set:94.807
+=> Validation accuracy did not improve. Epoch: 61
+[62,  2000] loss: 0.217
+[62,  4000] loss: 0.217
+[62,  6000] loss: 0.217
+[62,  8000] loss: 0.216
+[62, 10000] loss: 0.214
+Accuracy on dev set:94.683
+=> Validation accuracy did not improve. Epoch: 62
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 58.373
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.372
+[1,  6000] loss: 1.363
+[1,  8000] loss: 1.350
+[1, 10000] loss: 1.321
+Accuracy on dev set:73.102
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.158
+[2,  4000] loss: 0.892
+[2,  6000] loss: 0.645
+[2,  8000] loss: 0.558
+[2, 10000] loss: 0.523
+Accuracy on dev set:90.524
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.486
+[3,  4000] loss: 0.488
+[3,  6000] loss: 0.468
+[3,  8000] loss: 0.461
+[3, 10000] loss: 0.457
+Accuracy on dev set:91.482
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.442
+[4,  4000] loss: 0.437
+[4,  6000] loss: 0.430
+[4,  8000] loss: 0.431
+[4, 10000] loss: 0.425
+Accuracy on dev set:91.916
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.411
+[5,  4000] loss: 0.408
+[5,  6000] loss: 0.410
+[5,  8000] loss: 0.397
+[5, 10000] loss: 0.400
+Accuracy on dev set:91.981
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.386
+[6,  4000] loss: 0.386
+[6,  6000] loss: 0.387
+[6,  8000] loss: 0.383
+[6, 10000] loss: 0.383
+Accuracy on dev set:92.234
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.369
+[7,  4000] loss: 0.368
+[7,  6000] loss: 0.370
+[7,  8000] loss: 0.372
+[7, 10000] loss: 0.365
+Accuracy on dev set:92.442
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.361
+[8,  4000] loss: 0.361
+[8,  6000] loss: 0.355
+[8,  8000] loss: 0.356
+[8, 10000] loss: 0.356
+Accuracy on dev set:92.547
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.352
+[9,  4000] loss: 0.352
+[9,  6000] loss: 0.350
+[9,  8000] loss: 0.344
+[9, 10000] loss: 0.344
+Accuracy on dev set:92.647
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.342
+[10,  4000] loss: 0.344
+[10,  6000] loss: 0.339
+[10,  8000] loss: 0.339
+[10, 10000] loss: 0.332
+Accuracy on dev set:92.807
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.337
+[11,  4000] loss: 0.333
+[11,  6000] loss: 0.332
+[11,  8000] loss: 0.327
+[11, 10000] loss: 0.325
+Accuracy on dev set:92.941
+=> Saving a new best. Epoch: 11
+[12,  2000] loss: 0.328
+[12,  4000] loss: 0.324
+[12,  6000] loss: 0.323
+[12,  8000] loss: 0.319
+[12, 10000] loss: 0.325
+Accuracy on dev set:92.955
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.316
+[13,  4000] loss: 0.316
+[13,  6000] loss: 0.315
+[13,  8000] loss: 0.315
+[13, 10000] loss: 0.323
+Accuracy on dev set:93.202
+=> Saving a new best. Epoch: 13
+[14,  2000] loss: 0.314
+[14,  4000] loss: 0.318
+[14,  6000] loss: 0.307
+[14,  8000] loss: 0.308
+[14, 10000] loss: 0.307
+Accuracy on dev set:92.914
+=> Validation accuracy did not improve. Epoch: 14
+[15,  2000] loss: 0.303
+[15,  4000] loss: 0.305
+[15,  6000] loss: 0.307
+[15,  8000] loss: 0.298
+[15, 10000] loss: 0.310
+Accuracy on dev set:92.740
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.296
+[16,  4000] loss: 0.305
+[16,  6000] loss: 0.298
+[16,  8000] loss: 0.298
+[16, 10000] loss: 0.297
+Accuracy on dev set:93.271
+=> Saving a new best. Epoch: 16
+[17,  2000] loss: 0.296
+[17,  4000] loss: 0.297
+[17,  6000] loss: 0.297
+[17,  8000] loss: 0.292
+[17, 10000] loss: 0.286
+Accuracy on dev set:93.108
+=> Validation accuracy did not improve. Epoch: 17
+[18,  2000] loss: 0.293
+[18,  4000] loss: 0.291
+[18,  6000] loss: 0.283
+[18,  8000] loss: 0.285
+[18, 10000] loss: 0.286
+Accuracy on dev set:93.260
+=> Validation accuracy did not improve. Epoch: 18
+[19,  2000] loss: 0.283
+[19,  4000] loss: 0.286
+[19,  6000] loss: 0.277
+[19,  8000] loss: 0.282
+[19, 10000] loss: 0.286
+Accuracy on dev set:93.085
+=> Validation accuracy did not improve. Epoch: 19
+[20,  2000] loss: 0.277
+[20,  4000] loss: 0.279
+[20,  6000] loss: 0.279
+[20,  8000] loss: 0.282
+[20, 10000] loss: 0.282
+Accuracy on dev set:93.830
+=> Saving a new best. Epoch: 20
+[21,  2000] loss: 0.274
+[21,  4000] loss: 0.272
+[21,  6000] loss: 0.278
+[21,  8000] loss: 0.272
+[21, 10000] loss: 0.280
+Accuracy on dev set:93.896
+=> Saving a new best. Epoch: 21
+[22,  2000] loss: 0.266
+[22,  4000] loss: 0.275
+[22,  6000] loss: 0.273
+[22,  8000] loss: 0.273
+[22, 10000] loss: 0.273
+Accuracy on dev set:93.510
+=> Validation accuracy did not improve. Epoch: 22
+[23,  2000] loss: 0.273
+[23,  4000] loss: 0.273
+[23,  6000] loss: 0.265
+[23,  8000] loss: 0.268
+[23, 10000] loss: 0.269
+Accuracy on dev set:93.937
+=> Saving a new best. Epoch: 23
+[24,  2000] loss: 0.265
+[24,  4000] loss: 0.267
+[24,  6000] loss: 0.264
+[24,  8000] loss: 0.269
+[24, 10000] loss: 0.264
+Accuracy on dev set:93.731
+=> Validation accuracy did not improve. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.257
+[25,  6000] loss: 0.267
+[25,  8000] loss: 0.262
+[25, 10000] loss: 0.268
+Accuracy on dev set:93.850
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.260
+[26,  4000] loss: 0.262
+[26,  6000] loss: 0.263
+[26,  8000] loss: 0.263
+[26, 10000] loss: 0.258
+Accuracy on dev set:93.647
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.260
+[27,  4000] loss: 0.256
+[27,  6000] loss: 0.263
+[27,  8000] loss: 0.263
+[27, 10000] loss: 0.256
+Accuracy on dev set:93.603
+=> Validation accuracy did not improve. Epoch: 27
+[28,  2000] loss: 0.258
+[28,  4000] loss: 0.265
+[28,  6000] loss: 0.254
+[28,  8000] loss: 0.254
+[28, 10000] loss: 0.257
+Accuracy on dev set:93.817
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.258
+[29,  4000] loss: 0.258
+[29,  6000] loss: 0.248
+[29,  8000] loss: 0.262
+[29, 10000] loss: 0.251
+Accuracy on dev set:94.196
+=> Saving a new best. Epoch: 29
+[30,  2000] loss: 0.254
+[30,  4000] loss: 0.253
+[30,  6000] loss: 0.253
+[30,  8000] loss: 0.254
+[30, 10000] loss: 0.255
+Accuracy on dev set:94.269
+=> Saving a new best. Epoch: 30
+[31,  2000] loss: 0.252
+[31,  4000] loss: 0.248
+[31,  6000] loss: 0.253
+[31,  8000] loss: 0.252
+[31, 10000] loss: 0.253
+Accuracy on dev set:92.988
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.247
+[32,  4000] loss: 0.242
+[32,  6000] loss: 0.249
+[32,  8000] loss: 0.250
+[32, 10000] loss: 0.253
+Accuracy on dev set:94.191
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.251
+[33,  4000] loss: 0.250
+[33,  6000] loss: 0.248
+[33,  8000] loss: 0.246
+[33, 10000] loss: 0.245
+Accuracy on dev set:94.139
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.244
+[34,  4000] loss: 0.248
+[34,  6000] loss: 0.245
+[34,  8000] loss: 0.244
+[34, 10000] loss: 0.246
+Accuracy on dev set:93.323
+=> Validation accuracy did not improve. Epoch: 34
+[35,  2000] loss: 0.240
+[35,  4000] loss: 0.242
+[35,  6000] loss: 0.244
+[35,  8000] loss: 0.243
+[35, 10000] loss: 0.248
+Accuracy on dev set:93.727
+=> Validation accuracy did not improve. Epoch: 35
+[36,  2000] loss: 0.238
+[36,  4000] loss: 0.243
+[36,  6000] loss: 0.246
+[36,  8000] loss: 0.241
+[36, 10000] loss: 0.238
+Accuracy on dev set:94.064
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.238
+[37,  4000] loss: 0.240
+[37,  6000] loss: 0.236
+[37,  8000] loss: 0.244
+[37, 10000] loss: 0.242
+Accuracy on dev set:93.986
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.241
+[38,  4000] loss: 0.234
+[38,  6000] loss: 0.240
+[38,  8000] loss: 0.237
+[38, 10000] loss: 0.239
+Accuracy on dev set:94.213
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.237
+[39,  4000] loss: 0.242
+[39,  6000] loss: 0.237
+[39,  8000] loss: 0.232
+[39, 10000] loss: 0.239
+Accuracy on dev set:94.099
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.237
+[40,  4000] loss: 0.232
+[40,  6000] loss: 0.236
+[40,  8000] loss: 0.237
+[40, 10000] loss: 0.236
+Accuracy on dev set:94.282
+=> Saving a new best. Epoch: 40
+[41,  2000] loss: 0.230
+[41,  4000] loss: 0.237
+[41,  6000] loss: 0.235
+[41,  8000] loss: 0.232
+[41, 10000] loss: 0.231
+Accuracy on dev set:94.151
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.231
+[42,  4000] loss: 0.233
+[42,  6000] loss: 0.231
+[42,  8000] loss: 0.233
+[42, 10000] loss: 0.232
+Accuracy on dev set:94.276
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.228
+[43,  4000] loss: 0.224
+[43,  6000] loss: 0.237
+[43,  8000] loss: 0.231
+[43, 10000] loss: 0.234
+Accuracy on dev set:94.204
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.226
+[44,  4000] loss: 0.232
+[44,  6000] loss: 0.229
+[44,  8000] loss: 0.230
+[44, 10000] loss: 0.231
+Accuracy on dev set:94.224
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.226
+[45,  4000] loss: 0.227
+[45,  6000] loss: 0.233
+[45,  8000] loss: 0.228
+[45, 10000] loss: 0.229
+Accuracy on dev set:93.444
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.229
+[46,  4000] loss: 0.227
+[46,  6000] loss: 0.225
+[46,  8000] loss: 0.231
+[46, 10000] loss: 0.227
+Accuracy on dev set:94.415
+=> Saving a new best. Epoch: 46
+[47,  2000] loss: 0.226
+[47,  4000] loss: 0.225
+[47,  6000] loss: 0.226
+[47,  8000] loss: 0.226
+[47, 10000] loss: 0.228
+Accuracy on dev set:94.348
+=> Validation accuracy did not improve. Epoch: 47
+[48,  2000] loss: 0.226
+[48,  4000] loss: 0.227
+[48,  6000] loss: 0.228
+[48,  8000] loss: 0.229
+[48, 10000] loss: 0.217
+Accuracy on dev set:94.175
+=> Validation accuracy did not improve. Epoch: 48
+[49,  2000] loss: 0.223
+[49,  4000] loss: 0.230
+[49,  6000] loss: 0.223
+[49,  8000] loss: 0.223
+[49, 10000] loss: 0.218
+Accuracy on dev set:94.052
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.223
+[50,  4000] loss: 0.223
+[50,  6000] loss: 0.224
+[50,  8000] loss: 0.224
+[50, 10000] loss: 0.226
+Accuracy on dev set:94.279
+=> Validation accuracy did not improve. Epoch: 50
+[51,  2000] loss: 0.227
+[51,  4000] loss: 0.218
+[51,  6000] loss: 0.221
+[51,  8000] loss: 0.223
+[51, 10000] loss: 0.223
+Accuracy on dev set:93.508
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.222
+[52,  4000] loss: 0.225
+[52,  6000] loss: 0.218
+[52,  8000] loss: 0.221
+[52, 10000] loss: 0.221
+Accuracy on dev set:94.254
+=> Validation accuracy did not improve. Epoch: 52
+[53,  2000] loss: 0.218
+[53,  4000] loss: 0.219
+[53,  6000] loss: 0.219
+[53,  8000] loss: 0.223
+[53, 10000] loss: 0.226
+Accuracy on dev set:94.206
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.220
+[54,  4000] loss: 0.219
+[54,  6000] loss: 0.221
+[54,  8000] loss: 0.217
+[54, 10000] loss: 0.220
+Accuracy on dev set:94.318
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.217
+[55,  4000] loss: 0.214
+[55,  6000] loss: 0.219
+[55,  8000] loss: 0.226
+[55, 10000] loss: 0.220
+Accuracy on dev set:93.713
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.219
+[56,  4000] loss: 0.217
+[56,  6000] loss: 0.219
+[56,  8000] loss: 0.213
+[56, 10000] loss: 0.218
+Accuracy on dev set:94.552
+=> Saving a new best. Epoch: 56
+[57,  2000] loss: 0.221
+[57,  4000] loss: 0.217
+[57,  6000] loss: 0.217
+[57,  8000] loss: 0.214
+[57, 10000] loss: 0.220
+Accuracy on dev set:93.528
+=> Validation accuracy did not improve. Epoch: 57
+[58,  2000] loss: 0.215
+[58,  4000] loss: 0.210
+[58,  6000] loss: 0.218
+[58,  8000] loss: 0.218
+[58, 10000] loss: 0.215
+Accuracy on dev set:93.817
+=> Validation accuracy did not improve. Epoch: 58
+[59,  2000] loss: 0.214
+[59,  4000] loss: 0.217
+[59,  6000] loss: 0.215
+[59,  8000] loss: 0.215
+[59, 10000] loss: 0.217
+Accuracy on dev set:94.069
+=> Validation accuracy did not improve. Epoch: 59
+[60,  2000] loss: 0.214
+[60,  4000] loss: 0.214
+[60,  6000] loss: 0.218
+[60,  8000] loss: 0.217
+[60, 10000] loss: 0.213
+Accuracy on dev set:94.214
+=> Validation accuracy did not improve. Epoch: 60
+[61,  2000] loss: 0.214
+[61,  4000] loss: 0.214
+[61,  6000] loss: 0.215
+[61,  8000] loss: 0.220
+[61, 10000] loss: 0.209
+Accuracy on dev set:94.410
+=> Validation accuracy did not improve. Epoch: 61
+[62,  2000] loss: 0.209
+[62,  4000] loss: 0.211
+[62,  6000] loss: 0.214
+[62,  8000] loss: 0.215
+[62, 10000] loss: 0.217
+Accuracy on dev set:94.409
+=> Validation accuracy did not improve. Epoch: 62
+[63,  2000] loss: 0.215
+[63,  4000] loss: 0.210
+[63,  6000] loss: 0.211
+[63,  8000] loss: 0.208
+[63, 10000] loss: 0.211
+Accuracy on dev set:93.990
+=> Validation accuracy did not improve. Epoch: 63
+[64,  2000] loss: 0.215
+[64,  4000] loss: 0.208
+[64,  6000] loss: 0.212
+[64,  8000] loss: 0.212
+[64, 10000] loss: 0.208
+Accuracy on dev set:93.497
+=> Validation accuracy did not improve. Epoch: 64
+[65,  2000] loss: 0.211
+[65,  4000] loss: 0.214
+[65,  6000] loss: 0.210
+[65,  8000] loss: 0.211
+[65, 10000] loss: 0.211
+Accuracy on dev set:94.666
+=> Saving a new best. Epoch: 65
+[66,  2000] loss: 0.205
+[66,  4000] loss: 0.208
+[66,  6000] loss: 0.211
+[66,  8000] loss: 0.209
+[66, 10000] loss: 0.217
+Accuracy on dev set:94.369
+=> Validation accuracy did not improve. Epoch: 66
+[67,  2000] loss: 0.206
+[67,  4000] loss: 0.206
+[67,  6000] loss: 0.207
+[67,  8000] loss: 0.212
+[67, 10000] loss: 0.215
+Accuracy on dev set:94.285
+=> Validation accuracy did not improve. Epoch: 67
+[68,  2000] loss: 0.214
+[68,  4000] loss: 0.210
+[68,  6000] loss: 0.209
+[68,  8000] loss: 0.208
+[68, 10000] loss: 0.207
+Accuracy on dev set:93.866
+=> Validation accuracy did not improve. Epoch: 68
+[69,  2000] loss: 0.205
+[69,  4000] loss: 0.206
+[69,  6000] loss: 0.209
+[69,  8000] loss: 0.211
+[69, 10000] loss: 0.211
+Accuracy on dev set:94.028
+=> Validation accuracy did not improve. Epoch: 69
+[70,  2000] loss: 0.205
+[70,  4000] loss: 0.208
+[70,  6000] loss: 0.212
+[70,  8000] loss: 0.205
+[70, 10000] loss: 0.204
+Accuracy on dev set:94.444
+=> Validation accuracy did not improve. Epoch: 70
+[71,  2000] loss: 0.206
+[71,  4000] loss: 0.204
+[71,  6000] loss: 0.211
+[71,  8000] loss: 0.207
+[71, 10000] loss: 0.205
+Accuracy on dev set:94.348
+=> Validation accuracy did not improve. Epoch: 71
+[72,  2000] loss: 0.204
+[72,  4000] loss: 0.204
+[72,  6000] loss: 0.208
+[72,  8000] loss: 0.209
+[72, 10000] loss: 0.206
+Accuracy on dev set:93.354
+=> Validation accuracy did not improve. Epoch: 72
+[73,  2000] loss: 0.206
+[73,  4000] loss: 0.202
+[73,  6000] loss: 0.208
+[73,  8000] loss: 0.206
+[73, 10000] loss: 0.206
+Accuracy on dev set:94.260
+=> Validation accuracy did not improve. Epoch: 73
+[74,  2000] loss: 0.203
+[74,  4000] loss: 0.204
+[74,  6000] loss: 0.211
+[74,  8000] loss: 0.205
+[74, 10000] loss: 0.204
+Accuracy on dev set:94.311
+=> Validation accuracy did not improve. Epoch: 74
+[75,  2000] loss: 0.201
+[75,  4000] loss: 0.198
+[75,  6000] loss: 0.202
+[75,  8000] loss: 0.210
+[75, 10000] loss: 0.207
+Accuracy on dev set:94.306
+=> Validation accuracy did not improve. Epoch: 75
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 55.062
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.370
+[1,  6000] loss: 1.363
+[1,  8000] loss: 1.347
+[1, 10000] loss: 1.314
+Accuracy on dev set:75.257
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.128
+[2,  4000] loss: 0.840
+[2,  6000] loss: 0.611
+[2,  8000] loss: 0.544
+[2, 10000] loss: 0.522
+Accuracy on dev set:90.136
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.492
+[3,  4000] loss: 0.475
+[3,  6000] loss: 0.478
+[3,  8000] loss: 0.459
+[3, 10000] loss: 0.458
+Accuracy on dev set:91.131
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.445
+[4,  4000] loss: 0.440
+[4,  6000] loss: 0.433
+[4,  8000] loss: 0.430
+[4, 10000] loss: 0.429
+Accuracy on dev set:91.691
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.421
+[5,  4000] loss: 0.411
+[5,  6000] loss: 0.412
+[5,  8000] loss: 0.408
+[5, 10000] loss: 0.401
+Accuracy on dev set:91.787
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.398
+[6,  4000] loss: 0.395
+[6,  6000] loss: 0.388
+[6,  8000] loss: 0.393
+[6, 10000] loss: 0.381
+Accuracy on dev set:92.003
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.379
+[7,  4000] loss: 0.379
+[7,  6000] loss: 0.380
+[7,  8000] loss: 0.376
+[7, 10000] loss: 0.367
+Accuracy on dev set:92.051
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.365
+[8,  4000] loss: 0.360
+[8,  6000] loss: 0.368
+[8,  8000] loss: 0.361
+[8, 10000] loss: 0.357
+Accuracy on dev set:92.172
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.367
+[9,  4000] loss: 0.349
+[9,  6000] loss: 0.353
+[9,  8000] loss: 0.345
+[9, 10000] loss: 0.345
+Accuracy on dev set:92.430
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.351
+[10,  4000] loss: 0.345
+[10,  6000] loss: 0.332
+[10,  8000] loss: 0.338
+[10, 10000] loss: 0.342
+Accuracy on dev set:92.546
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.332
+[11,  4000] loss: 0.334
+[11,  6000] loss: 0.334
+[11,  8000] loss: 0.330
+[11, 10000] loss: 0.330
+Accuracy on dev set:92.048
+=> Validation accuracy did not improve. Epoch: 11
+[12,  2000] loss: 0.332
+[12,  4000] loss: 0.326
+[12,  6000] loss: 0.319
+[12,  8000] loss: 0.319
+[12, 10000] loss: 0.326
+Accuracy on dev set:92.216
+=> Validation accuracy did not improve. Epoch: 12
+[13,  2000] loss: 0.318
+[13,  4000] loss: 0.319
+[13,  6000] loss: 0.317
+[13,  8000] loss: 0.315
+[13, 10000] loss: 0.319
+Accuracy on dev set:92.569
+=> Saving a new best. Epoch: 13
+[14,  2000] loss: 0.308
+[14,  4000] loss: 0.309
+[14,  6000] loss: 0.317
+[14,  8000] loss: 0.307
+[14, 10000] loss: 0.310
+Accuracy on dev set:92.283
+=> Validation accuracy did not improve. Epoch: 14
+[15,  2000] loss: 0.306
+[15,  4000] loss: 0.298
+[15,  6000] loss: 0.313
+[15,  8000] loss: 0.302
+[15, 10000] loss: 0.305
+Accuracy on dev set:91.895
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.302
+[16,  4000] loss: 0.303
+[16,  6000] loss: 0.300
+[16,  8000] loss: 0.298
+[16, 10000] loss: 0.295
+Accuracy on dev set:92.543
+=> Validation accuracy did not improve. Epoch: 16
+[17,  2000] loss: 0.298
+[17,  4000] loss: 0.295
+[17,  6000] loss: 0.289
+[17,  8000] loss: 0.294
+[17, 10000] loss: 0.290
+Accuracy on dev set:92.425
+=> Validation accuracy did not improve. Epoch: 17
+[18,  2000] loss: 0.290
+[18,  4000] loss: 0.293
+[18,  6000] loss: 0.289
+[18,  8000] loss: 0.290
+[18, 10000] loss: 0.283
+Accuracy on dev set:92.837
+=> Saving a new best. Epoch: 18
+[19,  2000] loss: 0.287
+[19,  4000] loss: 0.286
+[19,  6000] loss: 0.277
+[19,  8000] loss: 0.291
+[19, 10000] loss: 0.280
+Accuracy on dev set:93.162
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.278
+[20,  4000] loss: 0.286
+[20,  6000] loss: 0.280
+[20,  8000] loss: 0.280
+[20, 10000] loss: 0.279
+Accuracy on dev set:91.172
+=> Validation accuracy did not improve. Epoch: 20
+[21,  2000] loss: 0.273
+[21,  4000] loss: 0.277
+[21,  6000] loss: 0.275
+[21,  8000] loss: 0.280
+[21, 10000] loss: 0.276
+Accuracy on dev set:93.000
+=> Validation accuracy did not improve. Epoch: 21
+[22,  2000] loss: 0.281
+[22,  4000] loss: 0.271
+[22,  6000] loss: 0.272
+[22,  8000] loss: 0.274
+[22, 10000] loss: 0.272
+Accuracy on dev set:93.152
+=> Validation accuracy did not improve. Epoch: 22
+[23,  2000] loss: 0.274
+[23,  4000] loss: 0.269
+[23,  6000] loss: 0.270
+[23,  8000] loss: 0.271
+[23, 10000] loss: 0.265
+Accuracy on dev set:93.548
+=> Saving a new best. Epoch: 23
+[24,  2000] loss: 0.274
+[24,  4000] loss: 0.264
+[24,  6000] loss: 0.265
+[24,  8000] loss: 0.267
+[24, 10000] loss: 0.266
+Accuracy on dev set:92.962
+=> Validation accuracy did not improve. Epoch: 24
+[25,  2000] loss: 0.266
+[25,  4000] loss: 0.270
+[25,  6000] loss: 0.261
+[25,  8000] loss: 0.264
+[25, 10000] loss: 0.267
+Accuracy on dev set:93.156
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.259
+[26,  4000] loss: 0.265
+[26,  6000] loss: 0.264
+[26,  8000] loss: 0.266
+[26, 10000] loss: 0.263
+Accuracy on dev set:93.184
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.260
+[27,  4000] loss: 0.265
+[27,  6000] loss: 0.263
+[27,  8000] loss: 0.257
+[27, 10000] loss: 0.260
+Accuracy on dev set:93.507
+=> Validation accuracy did not improve. Epoch: 27
+[28,  2000] loss: 0.257
+[28,  4000] loss: 0.257
+[28,  6000] loss: 0.258
+[28,  8000] loss: 0.264
+[28, 10000] loss: 0.259
+Accuracy on dev set:93.282
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.258
+[29,  4000] loss: 0.262
+[29,  6000] loss: 0.250
+[29,  8000] loss: 0.256
+[29, 10000] loss: 0.262
+Accuracy on dev set:93.320
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.255
+[30,  4000] loss: 0.254
+[30,  6000] loss: 0.255
+[30,  8000] loss: 0.255
+[30, 10000] loss: 0.253
+Accuracy on dev set:93.281
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.249
+[31,  4000] loss: 0.256
+[31,  6000] loss: 0.254
+[31,  8000] loss: 0.251
+[31, 10000] loss: 0.250
+Accuracy on dev set:93.757
+=> Saving a new best. Epoch: 31
+[32,  2000] loss: 0.252
+[32,  4000] loss: 0.247
+[32,  6000] loss: 0.250
+[32,  8000] loss: 0.249
+[32, 10000] loss: 0.256
+Accuracy on dev set:93.538
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.245
+[33,  4000] loss: 0.249
+[33,  6000] loss: 0.252
+[33,  8000] loss: 0.250
+[33, 10000] loss: 0.254
+Accuracy on dev set:93.780
+=> Saving a new best. Epoch: 33
+[34,  2000] loss: 0.252
+[34,  4000] loss: 0.246
+[34,  6000] loss: 0.243
+[34,  8000] loss: 0.249
+[34, 10000] loss: 0.250
+Accuracy on dev set:93.919
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.246
+[35,  4000] loss: 0.248
+[35,  6000] loss: 0.248
+[35,  8000] loss: 0.242
+[35, 10000] loss: 0.242
+Accuracy on dev set:92.940
+=> Validation accuracy did not improve. Epoch: 35
+[36,  2000] loss: 0.244
+[36,  4000] loss: 0.244
+[36,  6000] loss: 0.250
+[36,  8000] loss: 0.241
+[36, 10000] loss: 0.244
+Accuracy on dev set:91.086
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.243
+[37,  4000] loss: 0.241
+[37,  6000] loss: 0.241
+[37,  8000] loss: 0.248
+[37, 10000] loss: 0.241
+Accuracy on dev set:93.643
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.239
+[38,  4000] loss: 0.246
+[38,  6000] loss: 0.247
+[38,  8000] loss: 0.241
+[38, 10000] loss: 0.236
+Accuracy on dev set:93.427
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.241
+[39,  4000] loss: 0.237
+[39,  6000] loss: 0.241
+[39,  8000] loss: 0.242
+[39, 10000] loss: 0.241
+Accuracy on dev set:92.801
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.243
+[40,  4000] loss: 0.239
+[40,  6000] loss: 0.234
+[40,  8000] loss: 0.242
+[40, 10000] loss: 0.232
+Accuracy on dev set:93.782
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.236
+[41,  4000] loss: 0.239
+[41,  6000] loss: 0.232
+[41,  8000] loss: 0.238
+[41, 10000] loss: 0.236
+Accuracy on dev set:92.096
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.236
+[42,  4000] loss: 0.241
+[42,  6000] loss: 0.238
+[42,  8000] loss: 0.235
+[42, 10000] loss: 0.233
+Accuracy on dev set:93.759
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.236
+[43,  4000] loss: 0.231
+[43,  6000] loss: 0.234
+[43,  8000] loss: 0.233
+[43, 10000] loss: 0.235
+Accuracy on dev set:91.682
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.231
+[44,  4000] loss: 0.226
+[44,  6000] loss: 0.238
+[44,  8000] loss: 0.235
+[44, 10000] loss: 0.235
+Accuracy on dev set:93.063
+=> Validation accuracy did not improve. Epoch: 44
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 45.54
+
+[1,  2000] loss: 1.376
+[1,  4000] loss: 1.369
+[1,  6000] loss: 1.361
+[1,  8000] loss: 1.348
+[1, 10000] loss: 1.324
+Accuracy on dev set:64.098
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.180
+[2,  4000] loss: 0.930
+[2,  6000] loss: 0.668
+[2,  8000] loss: 0.556
+[2, 10000] loss: 0.521
+Accuracy on dev set:90.332
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.483
+[3,  4000] loss: 0.470
+[3,  6000] loss: 0.464
+[3,  8000] loss: 0.454
+[3, 10000] loss: 0.449
+Accuracy on dev set:91.718
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.445
+[4,  4000] loss: 0.430
+[4,  6000] loss: 0.429
+[4,  8000] loss: 0.415
+[4, 10000] loss: 0.420
+Accuracy on dev set:91.904
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.414
+[5,  4000] loss: 0.403
+[5,  6000] loss: 0.400
+[5,  8000] loss: 0.400
+[5, 10000] loss: 0.409
+Accuracy on dev set:92.078
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.394
+[6,  4000] loss: 0.385
+[6,  6000] loss: 0.389
+[6,  8000] loss: 0.378
+[6, 10000] loss: 0.383
+Accuracy on dev set:92.569
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.376
+[7,  4000] loss: 0.377
+[7,  6000] loss: 0.378
+[7,  8000] loss: 0.370
+[7, 10000] loss: 0.365
+Accuracy on dev set:92.607
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.365
+[8,  4000] loss: 0.358
+[8,  6000] loss: 0.365
+[8,  8000] loss: 0.360
+[8, 10000] loss: 0.353
+Accuracy on dev set:92.738
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.350
+[9,  4000] loss: 0.354
+[9,  6000] loss: 0.354
+[9,  8000] loss: 0.348
+[9, 10000] loss: 0.351
+Accuracy on dev set:92.958
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.347
+[10,  4000] loss: 0.346
+[10,  6000] loss: 0.342
+[10,  8000] loss: 0.339
+[10, 10000] loss: 0.335
+Accuracy on dev set:92.919
+=> Validation accuracy did not improve. Epoch: 10
+[11,  2000] loss: 0.338
+[11,  4000] loss: 0.335
+[11,  6000] loss: 0.334
+[11,  8000] loss: 0.330
+[11, 10000] loss: 0.336
+Accuracy on dev set:92.975
+=> Saving a new best. Epoch: 11
+[12,  2000] loss: 0.329
+[12,  4000] loss: 0.329
+[12,  6000] loss: 0.326
+[12,  8000] loss: 0.322
+[12, 10000] loss: 0.322
+Accuracy on dev set:93.076
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.328
+[13,  4000] loss: 0.318
+[13,  6000] loss: 0.322
+[13,  8000] loss: 0.315
+[13, 10000] loss: 0.316
+Accuracy on dev set:93.343
+=> Saving a new best. Epoch: 13
+[14,  2000] loss: 0.313
+[14,  4000] loss: 0.314
+[14,  6000] loss: 0.319
+[14,  8000] loss: 0.312
+[14, 10000] loss: 0.306
+Accuracy on dev set:93.479
+=> Saving a new best. Epoch: 14
+[15,  2000] loss: 0.312
+[15,  4000] loss: 0.309
+[15,  6000] loss: 0.298
+[15,  8000] loss: 0.308
+[15, 10000] loss: 0.299
+Accuracy on dev set:93.304
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.301
+[16,  4000] loss: 0.305
+[16,  6000] loss: 0.297
+[16,  8000] loss: 0.299
+[16, 10000] loss: 0.299
+Accuracy on dev set:93.675
+=> Saving a new best. Epoch: 16
+[17,  2000] loss: 0.301
+[17,  4000] loss: 0.292
+[17,  6000] loss: 0.299
+[17,  8000] loss: 0.289
+[17, 10000] loss: 0.286
+Accuracy on dev set:93.430
+=> Validation accuracy did not improve. Epoch: 17
+[18,  2000] loss: 0.289
+[18,  4000] loss: 0.290
+[18,  6000] loss: 0.288
+[18,  8000] loss: 0.291
+[18, 10000] loss: 0.284
+Accuracy on dev set:93.461
+=> Validation accuracy did not improve. Epoch: 18
+[19,  2000] loss: 0.282
+[19,  4000] loss: 0.282
+[19,  6000] loss: 0.285
+[19,  8000] loss: 0.281
+[19, 10000] loss: 0.280
+Accuracy on dev set:94.045
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.276
+[20,  4000] loss: 0.276
+[20,  6000] loss: 0.277
+[20,  8000] loss: 0.281
+[20, 10000] loss: 0.282
+Accuracy on dev set:94.014
+=> Validation accuracy did not improve. Epoch: 20
+[21,  2000] loss: 0.278
+[21,  4000] loss: 0.277
+[21,  6000] loss: 0.274
+[21,  8000] loss: 0.272
+[21, 10000] loss: 0.272
+Accuracy on dev set:94.159
+=> Saving a new best. Epoch: 21
+[22,  2000] loss: 0.270
+[22,  4000] loss: 0.270
+[22,  6000] loss: 0.270
+[22,  8000] loss: 0.270
+[22, 10000] loss: 0.273
+Accuracy on dev set:93.867
+=> Validation accuracy did not improve. Epoch: 22
+[23,  2000] loss: 0.270
+[23,  4000] loss: 0.273
+[23,  6000] loss: 0.269
+[23,  8000] loss: 0.263
+[23, 10000] loss: 0.264
+Accuracy on dev set:93.974
+=> Validation accuracy did not improve. Epoch: 23
+[24,  2000] loss: 0.266
+[24,  4000] loss: 0.269
+[24,  6000] loss: 0.255
+[24,  8000] loss: 0.267
+[24, 10000] loss: 0.268
+Accuracy on dev set:94.358
+=> Saving a new best. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.264
+[25,  6000] loss: 0.261
+[25,  8000] loss: 0.256
+[25, 10000] loss: 0.263
+Accuracy on dev set:94.119
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.262
+[26,  4000] loss: 0.261
+[26,  6000] loss: 0.260
+[26,  8000] loss: 0.257
+[26, 10000] loss: 0.259
+Accuracy on dev set:94.421
+=> Saving a new best. Epoch: 26
+[27,  2000] loss: 0.257
+[27,  4000] loss: 0.251
+[27,  6000] loss: 0.263
+[27,  8000] loss: 0.260
+[27, 10000] loss: 0.254
+Accuracy on dev set:94.210
+=> Validation accuracy did not improve. Epoch: 27
+[28,  2000] loss: 0.261
+[28,  4000] loss: 0.262
+[28,  6000] loss: 0.247
+[28,  8000] loss: 0.252
+[28, 10000] loss: 0.251
+Accuracy on dev set:94.391
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.255
+[29,  4000] loss: 0.248
+[29,  6000] loss: 0.259
+[29,  8000] loss: 0.249
+[29, 10000] loss: 0.254
+Accuracy on dev set:94.490
+=> Saving a new best. Epoch: 29
+[30,  2000] loss: 0.247
+[30,  4000] loss: 0.256
+[30,  6000] loss: 0.250
+[30,  8000] loss: 0.253
+[30, 10000] loss: 0.250
+Accuracy on dev set:94.481
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.245
+[31,  4000] loss: 0.250
+[31,  6000] loss: 0.252
+[31,  8000] loss: 0.254
+[31, 10000] loss: 0.250
+Accuracy on dev set:94.287
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.251
+[32,  4000] loss: 0.251
+[32,  6000] loss: 0.244
+[32,  8000] loss: 0.247
+[32, 10000] loss: 0.248
+Accuracy on dev set:94.309
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.254
+[33,  4000] loss: 0.240
+[33,  6000] loss: 0.247
+[33,  8000] loss: 0.246
+[33, 10000] loss: 0.247
+Accuracy on dev set:94.219
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.242
+[34,  4000] loss: 0.248
+[34,  6000] loss: 0.242
+[34,  8000] loss: 0.244
+[34, 10000] loss: 0.237
+Accuracy on dev set:94.524
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.246
+[35,  4000] loss: 0.238
+[35,  6000] loss: 0.242
+[35,  8000] loss: 0.243
+[35, 10000] loss: 0.243
+Accuracy on dev set:94.627
+=> Saving a new best. Epoch: 35
+[36,  2000] loss: 0.242
+[36,  4000] loss: 0.241
+[36,  6000] loss: 0.240
+[36,  8000] loss: 0.238
+[36, 10000] loss: 0.241
+Accuracy on dev set:94.431
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.241
+[37,  4000] loss: 0.237
+[37,  6000] loss: 0.239
+[37,  8000] loss: 0.242
+[37, 10000] loss: 0.239
+Accuracy on dev set:94.201
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.237
+[38,  4000] loss: 0.242
+[38,  6000] loss: 0.240
+[38,  8000] loss: 0.233
+[38, 10000] loss: 0.239
+Accuracy on dev set:94.381
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.236
+[39,  4000] loss: 0.237
+[39,  6000] loss: 0.235
+[39,  8000] loss: 0.233
+[39, 10000] loss: 0.240
+Accuracy on dev set:93.935
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.233
+[40,  4000] loss: 0.235
+[40,  6000] loss: 0.235
+[40,  8000] loss: 0.234
+[40, 10000] loss: 0.243
+Accuracy on dev set:94.112
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.228
+[41,  4000] loss: 0.235
+[41,  6000] loss: 0.237
+[41,  8000] loss: 0.227
+[41, 10000] loss: 0.239
+Accuracy on dev set:94.200
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.230
+[42,  4000] loss: 0.231
+[42,  6000] loss: 0.233
+[42,  8000] loss: 0.236
+[42, 10000] loss: 0.230
+Accuracy on dev set:94.495
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.233
+[43,  4000] loss: 0.225
+[43,  6000] loss: 0.238
+[43,  8000] loss: 0.235
+[43, 10000] loss: 0.230
+Accuracy on dev set:94.533
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.230
+[44,  4000] loss: 0.227
+[44,  6000] loss: 0.230
+[44,  8000] loss: 0.231
+[44, 10000] loss: 0.233
+Accuracy on dev set:93.027
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.228
+[45,  4000] loss: 0.230
+[45,  6000] loss: 0.227
+[45,  8000] loss: 0.230
+[45, 10000] loss: 0.228
+Accuracy on dev set:94.622
+=> Validation accuracy did not improve. Epoch: 45
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 53.731
+
+[1,  2000] loss: 1.377
+[1,  4000] loss: 1.370
+[1,  6000] loss: 1.362
+[1,  8000] loss: 1.349
+[1, 10000] loss: 1.321
+Accuracy on dev set:71.326
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.162
+[2,  4000] loss: 0.899
+[2,  6000] loss: 0.651
+[2,  8000] loss: 0.562
+[2, 10000] loss: 0.541
+Accuracy on dev set:90.344
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.504
+[3,  4000] loss: 0.500
+[3,  6000] loss: 0.486
+[3,  8000] loss: 0.464
+[3, 10000] loss: 0.469
+Accuracy on dev set:91.585
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.461
+[4,  4000] loss: 0.457
+[4,  6000] loss: 0.453
+[4,  8000] loss: 0.433
+[4, 10000] loss: 0.433
+Accuracy on dev set:92.111
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.431
+[5,  4000] loss: 0.427
+[5,  6000] loss: 0.419
+[5,  8000] loss: 0.408
+[5, 10000] loss: 0.411
+Accuracy on dev set:92.363
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.410
+[6,  4000] loss: 0.398
+[6,  6000] loss: 0.392
+[6,  8000] loss: 0.398
+[6, 10000] loss: 0.385
+Accuracy on dev set:92.545
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.386
+[7,  4000] loss: 0.378
+[7,  6000] loss: 0.380
+[7,  8000] loss: 0.377
+[7, 10000] loss: 0.375
+Accuracy on dev set:92.500
+=> Validation accuracy did not improve. Epoch: 7
+[8,  2000] loss: 0.366
+[8,  4000] loss: 0.365
+[8,  6000] loss: 0.366
+[8,  8000] loss: 0.369
+[8, 10000] loss: 0.365
+Accuracy on dev set:92.919
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.358
+[9,  4000] loss: 0.354
+[9,  6000] loss: 0.352
+[9,  8000] loss: 0.356
+[9, 10000] loss: 0.355
+Accuracy on dev set:93.041
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.347
+[10,  4000] loss: 0.349
+[10,  6000] loss: 0.342
+[10,  8000] loss: 0.342
+[10, 10000] loss: 0.348
+Accuracy on dev set:93.050
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.340
+[11,  4000] loss: 0.333
+[11,  6000] loss: 0.333
+[11,  8000] loss: 0.342
+[11, 10000] loss: 0.329
+Accuracy on dev set:93.211
+=> Saving a new best. Epoch: 11
+[12,  2000] loss: 0.332
+[12,  4000] loss: 0.328
+[12,  6000] loss: 0.333
+[12,  8000] loss: 0.324
+[12, 10000] loss: 0.325
+Accuracy on dev set:93.147
+=> Validation accuracy did not improve. Epoch: 12
+[13,  2000] loss: 0.325
+[13,  4000] loss: 0.320
+[13,  6000] loss: 0.320
+[13,  8000] loss: 0.315
+[13, 10000] loss: 0.322
+Accuracy on dev set:92.909
+=> Validation accuracy did not improve. Epoch: 13
+[14,  2000] loss: 0.313
+[14,  4000] loss: 0.311
+[14,  6000] loss: 0.312
+[14,  8000] loss: 0.319
+[14, 10000] loss: 0.311
+Accuracy on dev set:93.146
+=> Validation accuracy did not improve. Epoch: 14
+[15,  2000] loss: 0.305
+[15,  4000] loss: 0.304
+[15,  6000] loss: 0.308
+[15,  8000] loss: 0.306
+[15, 10000] loss: 0.310
+Accuracy on dev set:93.061
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.304
+[16,  4000] loss: 0.301
+[16,  6000] loss: 0.298
+[16,  8000] loss: 0.301
+[16, 10000] loss: 0.298
+Accuracy on dev set:93.644
+=> Saving a new best. Epoch: 16
+[17,  2000] loss: 0.294
+[17,  4000] loss: 0.300
+[17,  6000] loss: 0.297
+[17,  8000] loss: 0.295
+[17, 10000] loss: 0.293
+Accuracy on dev set:93.322
+=> Validation accuracy did not improve. Epoch: 17
+[18,  2000] loss: 0.297
+[18,  4000] loss: 0.285
+[18,  6000] loss: 0.286
+[18,  8000] loss: 0.292
+[18, 10000] loss: 0.286
+Accuracy on dev set:93.459
+=> Validation accuracy did not improve. Epoch: 18
+[19,  2000] loss: 0.285
+[19,  4000] loss: 0.283
+[19,  6000] loss: 0.284
+[19,  8000] loss: 0.284
+[19, 10000] loss: 0.288
+Accuracy on dev set:93.933
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.278
+[20,  4000] loss: 0.282
+[20,  6000] loss: 0.283
+[20,  8000] loss: 0.273
+[20, 10000] loss: 0.283
+Accuracy on dev set:94.235
+=> Saving a new best. Epoch: 20
+[21,  2000] loss: 0.283
+[21,  4000] loss: 0.270
+[21,  6000] loss: 0.275
+[21,  8000] loss: 0.280
+[21, 10000] loss: 0.274
+Accuracy on dev set:94.181
+=> Validation accuracy did not improve. Epoch: 21
+[22,  2000] loss: 0.272
+[22,  4000] loss: 0.272
+[22,  6000] loss: 0.273
+[22,  8000] loss: 0.274
+[22, 10000] loss: 0.270
+Accuracy on dev set:94.258
+=> Saving a new best. Epoch: 22
+[23,  2000] loss: 0.277
+[23,  4000] loss: 0.268
+[23,  6000] loss: 0.264
+[23,  8000] loss: 0.272
+[23, 10000] loss: 0.266
+Accuracy on dev set:94.295
+=> Saving a new best. Epoch: 23
+[24,  2000] loss: 0.264
+[24,  4000] loss: 0.263
+[24,  6000] loss: 0.268
+[24,  8000] loss: 0.274
+[24, 10000] loss: 0.263
+Accuracy on dev set:94.066
+=> Validation accuracy did not improve. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.258
+[25,  6000] loss: 0.268
+[25,  8000] loss: 0.266
+[25, 10000] loss: 0.264
+Accuracy on dev set:94.534
+=> Saving a new best. Epoch: 25
+[26,  2000] loss: 0.260
+[26,  4000] loss: 0.260
+[26,  6000] loss: 0.261
+[26,  8000] loss: 0.259
+[26, 10000] loss: 0.266
+Accuracy on dev set:94.571
+=> Saving a new best. Epoch: 26
+[27,  2000] loss: 0.264
+[27,  4000] loss: 0.257
+[27,  6000] loss: 0.262
+[27,  8000] loss: 0.260
+[27, 10000] loss: 0.254
+Accuracy on dev set:94.612
+=> Saving a new best. Epoch: 27
+[28,  2000] loss: 0.260
+[28,  4000] loss: 0.259
+[28,  6000] loss: 0.253
+[28,  8000] loss: 0.255
+[28, 10000] loss: 0.260
+Accuracy on dev set:94.440
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.255
+[29,  4000] loss: 0.252
+[29,  6000] loss: 0.253
+[29,  8000] loss: 0.259
+[29, 10000] loss: 0.254
+Accuracy on dev set:94.298
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.254
+[30,  4000] loss: 0.258
+[30,  6000] loss: 0.252
+[30,  8000] loss: 0.249
+[30, 10000] loss: 0.252
+Accuracy on dev set:94.043
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.248
+[31,  4000] loss: 0.252
+[31,  6000] loss: 0.252
+[31,  8000] loss: 0.252
+[31, 10000] loss: 0.249
+Accuracy on dev set:94.489
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.245
+[32,  4000] loss: 0.250
+[32,  6000] loss: 0.255
+[32,  8000] loss: 0.245
+[32, 10000] loss: 0.251
+Accuracy on dev set:94.637
+=> Saving a new best. Epoch: 32
+[33,  2000] loss: 0.246
+[33,  4000] loss: 0.251
+[33,  6000] loss: 0.253
+[33,  8000] loss: 0.245
+[33, 10000] loss: 0.245
+Accuracy on dev set:94.445
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.246
+[34,  4000] loss: 0.247
+[34,  6000] loss: 0.245
+[34,  8000] loss: 0.248
+[34, 10000] loss: 0.240
+Accuracy on dev set:94.534
+=> Validation accuracy did not improve. Epoch: 34
+[35,  2000] loss: 0.243
+[35,  4000] loss: 0.243
+[35,  6000] loss: 0.244
+[35,  8000] loss: 0.241
+[35, 10000] loss: 0.243
+Accuracy on dev set:94.343
+=> Validation accuracy did not improve. Epoch: 35
+[36,  2000] loss: 0.248
+[36,  4000] loss: 0.243
+[36,  6000] loss: 0.243
+[36,  8000] loss: 0.237
+[36, 10000] loss: 0.245
+Accuracy on dev set:94.781
+=> Saving a new best. Epoch: 36
+[37,  2000] loss: 0.235
+[37,  4000] loss: 0.239
+[37,  6000] loss: 0.247
+[37,  8000] loss: 0.242
+[37, 10000] loss: 0.237
+Accuracy on dev set:94.787
+=> Saving a new best. Epoch: 37
+[38,  2000] loss: 0.238
+[38,  4000] loss: 0.242
+[38,  6000] loss: 0.241
+[38,  8000] loss: 0.238
+[38, 10000] loss: 0.242
+Accuracy on dev set:94.729
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.241
+[39,  4000] loss: 0.237
+[39,  6000] loss: 0.235
+[39,  8000] loss: 0.246
+[39, 10000] loss: 0.232
+Accuracy on dev set:94.891
+=> Saving a new best. Epoch: 39
+[40,  2000] loss: 0.233
+[40,  4000] loss: 0.241
+[40,  6000] loss: 0.232
+[40,  8000] loss: 0.238
+[40, 10000] loss: 0.235
+Accuracy on dev set:94.591
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.237
+[41,  4000] loss: 0.233
+[41,  6000] loss: 0.235
+[41,  8000] loss: 0.231
+[41, 10000] loss: 0.240
+Accuracy on dev set:94.387
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.232
+[42,  4000] loss: 0.231
+[42,  6000] loss: 0.229
+[42,  8000] loss: 0.237
+[42, 10000] loss: 0.239
+Accuracy on dev set:93.812
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.227
+[43,  4000] loss: 0.232
+[43,  6000] loss: 0.228
+[43,  8000] loss: 0.240
+[43, 10000] loss: 0.232
+Accuracy on dev set:94.865
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.239
+[44,  4000] loss: 0.231
+[44,  6000] loss: 0.229
+[44,  8000] loss: 0.230
+[44, 10000] loss: 0.228
+Accuracy on dev set:95.082
+=> Saving a new best. Epoch: 44
+[45,  2000] loss: 0.233
+[45,  4000] loss: 0.223
+[45,  6000] loss: 0.231
+[45,  8000] loss: 0.232
+[45, 10000] loss: 0.233
+Accuracy on dev set:94.988
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.231
+[46,  4000] loss: 0.227
+[46,  6000] loss: 0.229
+[46,  8000] loss: 0.232
+[46, 10000] loss: 0.227
+Accuracy on dev set:94.008
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.232
+[47,  4000] loss: 0.233
+[47,  6000] loss: 0.223
+[47,  8000] loss: 0.230
+[47, 10000] loss: 0.223
+Accuracy on dev set:95.209
+=> Saving a new best. Epoch: 47
+[48,  2000] loss: 0.224
+[48,  4000] loss: 0.232
+[48,  6000] loss: 0.225
+[48,  8000] loss: 0.232
+[48, 10000] loss: 0.226
+Accuracy on dev set:94.377
+=> Validation accuracy did not improve. Epoch: 48
+[49,  2000] loss: 0.225
+[49,  4000] loss: 0.227
+[49,  6000] loss: 0.225
+[49,  8000] loss: 0.228
+[49, 10000] loss: 0.226
+Accuracy on dev set:94.461
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.226
+[50,  4000] loss: 0.221
+[50,  6000] loss: 0.224
+[50,  8000] loss: 0.228
+[50, 10000] loss: 0.225
+Accuracy on dev set:94.997
+=> Validation accuracy did not improve. Epoch: 50
+[51,  2000] loss: 0.220
+[51,  4000] loss: 0.228
+[51,  6000] loss: 0.220
+[51,  8000] loss: 0.226
+[51, 10000] loss: 0.224
+Accuracy on dev set:94.959
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.222
+[52,  4000] loss: 0.224
+[52,  6000] loss: 0.223
+[52,  8000] loss: 0.220
+[52, 10000] loss: 0.226
+Accuracy on dev set:94.891
+=> Validation accuracy did not improve. Epoch: 52
+[53,  2000] loss: 0.219
+[53,  4000] loss: 0.224
+[53,  6000] loss: 0.221
+[53,  8000] loss: 0.227
+[53, 10000] loss: 0.216
+Accuracy on dev set:94.706
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.220
+[54,  4000] loss: 0.218
+[54,  6000] loss: 0.227
+[54,  8000] loss: 0.220
+[54, 10000] loss: 0.224
+Accuracy on dev set:94.662
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.213
+[55,  4000] loss: 0.218
+[55,  6000] loss: 0.222
+[55,  8000] loss: 0.222
+[55, 10000] loss: 0.220
+Accuracy on dev set:94.832
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.217
+[56,  4000] loss: 0.223
+[56,  6000] loss: 0.218
+[56,  8000] loss: 0.217
+[56, 10000] loss: 0.222
+Accuracy on dev set:94.071
+=> Validation accuracy did not improve. Epoch: 56
+[57,  2000] loss: 0.223
+[57,  4000] loss: 0.222
+[57,  6000] loss: 0.216
+[57,  8000] loss: 0.218
+[57, 10000] loss: 0.215
+Accuracy on dev set:94.422
+=> Validation accuracy did not improve. Epoch: 57
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  5   | 94.43 | 92.03 | 84.42 | 98.58 | 93.86 | 94.89 |    47    |   95.209   |
+|      |   8   |   2   |       |   7   |       |   1   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 52.84
+
+[1,  2000] loss: 1.377
+[1,  4000] loss: 1.371
+[1,  6000] loss: 1.362
+[1,  8000] loss: 1.350
+[1, 10000] loss: 1.322
+Accuracy on dev set:70.887
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.171
+[2,  4000] loss: 0.906
+[2,  6000] loss: 0.652
+[2,  8000] loss: 0.560
+[2, 10000] loss: 0.528
+Accuracy on dev set:90.499
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.503
+[3,  4000] loss: 0.488
+[3,  6000] loss: 0.480
+[3,  8000] loss: 0.470
+[3, 10000] loss: 0.467
+Accuracy on dev set:91.379
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.460
+[4,  4000] loss: 0.449
+[4,  6000] loss: 0.442
+[4,  8000] loss: 0.432
+[4, 10000] loss: 0.435
+Accuracy on dev set:92.171
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.419
+[5,  4000] loss: 0.421
+[5,  6000] loss: 0.413
+[5,  8000] loss: 0.414
+[5, 10000] loss: 0.418
+Accuracy on dev set:92.138
+=> Validation accuracy did not improve. Epoch: 5
+[6,  2000] loss: 0.400
+[6,  4000] loss: 0.399
+[6,  6000] loss: 0.399
+[6,  8000] loss: 0.397
+[6, 10000] loss: 0.388
+Accuracy on dev set:92.529
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.382
+[7,  4000] loss: 0.389
+[7,  6000] loss: 0.379
+[7,  8000] loss: 0.377
+[7, 10000] loss: 0.374
+Accuracy on dev set:92.782
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.373
+[8,  4000] loss: 0.374
+[8,  6000] loss: 0.366
+[8,  8000] loss: 0.361
+[8, 10000] loss: 0.358
+Accuracy on dev set:92.758
+=> Validation accuracy did not improve. Epoch: 8
+[9,  2000] loss: 0.362
+[9,  4000] loss: 0.355
+[9,  6000] loss: 0.363
+[9,  8000] loss: 0.347
+[9, 10000] loss: 0.357
+Accuracy on dev set:92.946
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.353
+[10,  4000] loss: 0.341
+[10,  6000] loss: 0.351
+[10,  8000] loss: 0.347
+[10, 10000] loss: 0.340
+Accuracy on dev set:93.143
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.343
+[11,  4000] loss: 0.339
+[11,  6000] loss: 0.336
+[11,  8000] loss: 0.339
+[11, 10000] loss: 0.332
+Accuracy on dev set:93.133
+=> Validation accuracy did not improve. Epoch: 11
+[12,  2000] loss: 0.324
+[12,  4000] loss: 0.323
+[12,  6000] loss: 0.332
+[12,  8000] loss: 0.336
+[12, 10000] loss: 0.331
+Accuracy on dev set:93.160
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.325
+[13,  4000] loss: 0.322
+[13,  6000] loss: 0.319
+[13,  8000] loss: 0.322
+[13, 10000] loss: 0.321
+Accuracy on dev set:93.303
+=> Saving a new best. Epoch: 13
+[14,  2000] loss: 0.317
+[14,  4000] loss: 0.313
+[14,  6000] loss: 0.313
+[14,  8000] loss: 0.313
+[14, 10000] loss: 0.316
+Accuracy on dev set:93.202
+=> Validation accuracy did not improve. Epoch: 14
+[15,  2000] loss: 0.308
+[15,  4000] loss: 0.305
+[15,  6000] loss: 0.312
+[15,  8000] loss: 0.305
+[15, 10000] loss: 0.307
+Accuracy on dev set:93.663
+=> Saving a new best. Epoch: 15
+[16,  2000] loss: 0.303
+[16,  4000] loss: 0.302
+[16,  6000] loss: 0.302
+[16,  8000] loss: 0.303
+[16, 10000] loss: 0.292
+Accuracy on dev set:93.792
+=> Saving a new best. Epoch: 16
+[17,  2000] loss: 0.298
+[17,  4000] loss: 0.291
+[17,  6000] loss: 0.293
+[17,  8000] loss: 0.297
+[17, 10000] loss: 0.295
+Accuracy on dev set:93.826
+=> Saving a new best. Epoch: 17
+[18,  2000] loss: 0.289
+[18,  4000] loss: 0.285
+[18,  6000] loss: 0.293
+[18,  8000] loss: 0.290
+[18, 10000] loss: 0.286
+Accuracy on dev set:93.575
+=> Validation accuracy did not improve. Epoch: 18
+[19,  2000] loss: 0.286
+[19,  4000] loss: 0.282
+[19,  6000] loss: 0.293
+[19,  8000] loss: 0.281
+[19, 10000] loss: 0.281
+Accuracy on dev set:94.333
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.283
+[20,  4000] loss: 0.283
+[20,  6000] loss: 0.278
+[20,  8000] loss: 0.281
+[20, 10000] loss: 0.274
+Accuracy on dev set:93.679
+=> Validation accuracy did not improve. Epoch: 20
+[21,  2000] loss: 0.273
+[21,  4000] loss: 0.278
+[21,  6000] loss: 0.280
+[21,  8000] loss: 0.277
+[21, 10000] loss: 0.277
+Accuracy on dev set:93.578
+=> Validation accuracy did not improve. Epoch: 21
+[22,  2000] loss: 0.272
+[22,  4000] loss: 0.270
+[22,  6000] loss: 0.273
+[22,  8000] loss: 0.277
+[22, 10000] loss: 0.273
+Accuracy on dev set:94.463
+=> Saving a new best. Epoch: 22
+[23,  2000] loss: 0.277
+[23,  4000] loss: 0.268
+[23,  6000] loss: 0.269
+[23,  8000] loss: 0.267
+[23, 10000] loss: 0.273
+Accuracy on dev set:94.285
+=> Validation accuracy did not improve. Epoch: 23
+[24,  2000] loss: 0.271
+[24,  4000] loss: 0.266
+[24,  6000] loss: 0.270
+[24,  8000] loss: 0.263
+[24, 10000] loss: 0.262
+Accuracy on dev set:94.525
+=> Saving a new best. Epoch: 24
+[25,  2000] loss: 0.266
+[25,  4000] loss: 0.262
+[25,  6000] loss: 0.267
+[25,  8000] loss: 0.265
+[25, 10000] loss: 0.262
+Accuracy on dev set:94.201
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.257
+[26,  4000] loss: 0.263
+[26,  6000] loss: 0.262
+[26,  8000] loss: 0.260
+[26, 10000] loss: 0.266
+Accuracy on dev set:94.363
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.257
+[27,  4000] loss: 0.256
+[27,  6000] loss: 0.258
+[27,  8000] loss: 0.259
+[27, 10000] loss: 0.262
+Accuracy on dev set:94.481
+=> Validation accuracy did not improve. Epoch: 27
+[28,  2000] loss: 0.261
+[28,  4000] loss: 0.253
+[28,  6000] loss: 0.253
+[28,  8000] loss: 0.260
+[28, 10000] loss: 0.258
+Accuracy on dev set:94.059
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.251
+[29,  4000] loss: 0.254
+[29,  6000] loss: 0.254
+[29,  8000] loss: 0.255
+[29, 10000] loss: 0.254
+Accuracy on dev set:94.418
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.251
+[30,  4000] loss: 0.259
+[30,  6000] loss: 0.248
+[30,  8000] loss: 0.250
+[30, 10000] loss: 0.253
+Accuracy on dev set:94.676
+=> Saving a new best. Epoch: 30
+[31,  2000] loss: 0.247
+[31,  4000] loss: 0.254
+[31,  6000] loss: 0.254
+[31,  8000] loss: 0.252
+[31, 10000] loss: 0.242
+Accuracy on dev set:94.696
+=> Saving a new best. Epoch: 31
+[32,  2000] loss: 0.247
+[32,  4000] loss: 0.243
+[32,  6000] loss: 0.249
+[32,  8000] loss: 0.249
+[32, 10000] loss: 0.248
+Accuracy on dev set:93.701
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.250
+[33,  4000] loss: 0.240
+[33,  6000] loss: 0.245
+[33,  8000] loss: 0.249
+[33, 10000] loss: 0.246
+Accuracy on dev set:94.652
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.241
+[34,  4000] loss: 0.249
+[34,  6000] loss: 0.248
+[34,  8000] loss: 0.238
+[34, 10000] loss: 0.242
+Accuracy on dev set:94.767
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.241
+[35,  4000] loss: 0.239
+[35,  6000] loss: 0.247
+[35,  8000] loss: 0.240
+[35, 10000] loss: 0.245
+Accuracy on dev set:94.329
+=> Validation accuracy did not improve. Epoch: 35
+[36,  2000] loss: 0.236
+[36,  4000] loss: 0.244
+[36,  6000] loss: 0.241
+[36,  8000] loss: 0.246
+[36, 10000] loss: 0.238
+Accuracy on dev set:94.382
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.243
+[37,  4000] loss: 0.233
+[37,  6000] loss: 0.239
+[37,  8000] loss: 0.237
+[37, 10000] loss: 0.240
+Accuracy on dev set:94.437
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.236
+[38,  4000] loss: 0.237
+[38,  6000] loss: 0.239
+[38,  8000] loss: 0.241
+[38, 10000] loss: 0.235
+Accuracy on dev set:94.949
+=> Saving a new best. Epoch: 38
+[39,  2000] loss: 0.239
+[39,  4000] loss: 0.234
+[39,  6000] loss: 0.236
+[39,  8000] loss: 0.230
+[39, 10000] loss: 0.240
+Accuracy on dev set:94.218
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.237
+[40,  4000] loss: 0.230
+[40,  6000] loss: 0.234
+[40,  8000] loss: 0.232
+[40, 10000] loss: 0.240
+Accuracy on dev set:94.851
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.238
+[41,  4000] loss: 0.236
+[41,  6000] loss: 0.230
+[41,  8000] loss: 0.239
+[41, 10000] loss: 0.231
+Accuracy on dev set:93.850
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.237
+[42,  4000] loss: 0.226
+[42,  6000] loss: 0.234
+[42,  8000] loss: 0.234
+[42, 10000] loss: 0.232
+Accuracy on dev set:94.852
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.228
+[43,  4000] loss: 0.229
+[43,  6000] loss: 0.232
+[43,  8000] loss: 0.230
+[43, 10000] loss: 0.235
+Accuracy on dev set:95.076
+=> Saving a new best. Epoch: 43
+[44,  2000] loss: 0.227
+[44,  4000] loss: 0.229
+[44,  6000] loss: 0.232
+[44,  8000] loss: 0.227
+[44, 10000] loss: 0.233
+Accuracy on dev set:94.872
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.227
+[45,  4000] loss: 0.228
+[45,  6000] loss: 0.230
+[45,  8000] loss: 0.227
+[45, 10000] loss: 0.231
+Accuracy on dev set:94.813
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.226
+[46,  4000] loss: 0.226
+[46,  6000] loss: 0.221
+[46,  8000] loss: 0.226
+[46, 10000] loss: 0.236
+Accuracy on dev set:94.965
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.223
+[47,  4000] loss: 0.231
+[47,  6000] loss: 0.225
+[47,  8000] loss: 0.226
+[47, 10000] loss: 0.223
+Accuracy on dev set:95.097
+=> Saving a new best. Epoch: 47
+[48,  2000] loss: 0.227
+[48,  4000] loss: 0.224
+[48,  6000] loss: 0.224
+[48,  8000] loss: 0.228
+[48, 10000] loss: 0.224
+Accuracy on dev set:94.942
+=> Validation accuracy did not improve. Epoch: 48
+[49,  2000] loss: 0.222
+[49,  4000] loss: 0.222
+[49,  6000] loss: 0.224
+[49,  8000] loss: 0.226
+[49, 10000] loss: 0.227
+Accuracy on dev set:95.035
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.218
+[50,  4000] loss: 0.225
+[50,  6000] loss: 0.230
+[50,  8000] loss: 0.220
+[50, 10000] loss: 0.224
+Accuracy on dev set:94.767
+=> Validation accuracy did not improve. Epoch: 50
+[51,  2000] loss: 0.221
+[51,  4000] loss: 0.216
+[51,  6000] loss: 0.225
+[51,  8000] loss: 0.224
+[51, 10000] loss: 0.220
+Accuracy on dev set:94.969
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.219
+[52,  4000] loss: 0.221
+[52,  6000] loss: 0.224
+[52,  8000] loss: 0.223
+[52, 10000] loss: 0.219
+Accuracy on dev set:94.874
+=> Validation accuracy did not improve. Epoch: 52
+[53,  2000] loss: 0.216
+[53,  4000] loss: 0.218
+[53,  6000] loss: 0.221
+[53,  8000] loss: 0.219
+[53, 10000] loss: 0.223
+Accuracy on dev set:94.978
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.220
+[54,  4000] loss: 0.222
+[54,  6000] loss: 0.218
+[54,  8000] loss: 0.220
+[54, 10000] loss: 0.216
+Accuracy on dev set:94.864
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.216
+[55,  4000] loss: 0.223
+[55,  6000] loss: 0.219
+[55,  8000] loss: 0.217
+[55, 10000] loss: 0.215
+Accuracy on dev set:94.874
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.219
+[56,  4000] loss: 0.215
+[56,  6000] loss: 0.221
+[56,  8000] loss: 0.219
+[56, 10000] loss: 0.212
+Accuracy on dev set:95.007
+=> Validation accuracy did not improve. Epoch: 56
+[57,  2000] loss: 0.214
+[57,  4000] loss: 0.219
+[57,  6000] loss: 0.217
+[57,  8000] loss: 0.216
+[57, 10000] loss: 0.216
+Accuracy on dev set:95.232
+=> Saving a new best. Epoch: 57
+[58,  2000] loss: 0.215
+[58,  4000] loss: 0.215
+[58,  6000] loss: 0.212
+[58,  8000] loss: 0.215
+[58, 10000] loss: 0.218
+Accuracy on dev set:95.039
+=> Validation accuracy did not improve. Epoch: 58
+[59,  2000] loss: 0.216
+[59,  4000] loss: 0.212
+[59,  6000] loss: 0.216
+[59,  8000] loss: 0.215
+[59, 10000] loss: 0.215
+Accuracy on dev set:95.242
+=> Saving a new best. Epoch: 59
+[60,  2000] loss: 0.214
+[60,  4000] loss: 0.211
+[60,  6000] loss: 0.216
+[60,  8000] loss: 0.215
+[60, 10000] loss: 0.212
+Accuracy on dev set:94.592
+=> Validation accuracy did not improve. Epoch: 60
+[61,  2000] loss: 0.212
+[61,  4000] loss: 0.215
+[61,  6000] loss: 0.214
+[61,  8000] loss: 0.210
+[61, 10000] loss: 0.215
+Accuracy on dev set:95.242
+=> Validation accuracy did not improve. Epoch: 61
+[62,  2000] loss: 0.212
+[62,  4000] loss: 0.214
+[62,  6000] loss: 0.210
+[62,  8000] loss: 0.214
+[62, 10000] loss: 0.211
+Accuracy on dev set:93.811
+=> Validation accuracy did not improve. Epoch: 62
+[63,  2000] loss: 0.209
+[63,  4000] loss: 0.219
+[63,  6000] loss: 0.209
+[63,  8000] loss: 0.211
+[63, 10000] loss: 0.212
+Accuracy on dev set:94.984
+=> Validation accuracy did not improve. Epoch: 63
+[64,  2000] loss: 0.212
+[64,  4000] loss: 0.213
+[64,  6000] loss: 0.212
+[64,  8000] loss: 0.206
+[64, 10000] loss: 0.214
+Accuracy on dev set:95.091
+=> Validation accuracy did not improve. Epoch: 64
+[65,  2000] loss: 0.211
+[65,  4000] loss: 0.209
+[65,  6000] loss: 0.210
+[65,  8000] loss: 0.210
+[65, 10000] loss: 0.213
+Accuracy on dev set:95.205
+=> Validation accuracy did not improve. Epoch: 65
+[66,  2000] loss: 0.200
+[66,  4000] loss: 0.214
+[66,  6000] loss: 0.208
+[66,  8000] loss: 0.215
+[66, 10000] loss: 0.212
+Accuracy on dev set:95.331
+=> Saving a new best. Epoch: 66
+[67,  2000] loss: 0.210
+[67,  4000] loss: 0.210
+[67,  6000] loss: 0.211
+[67,  8000] loss: 0.204
+[67, 10000] loss: 0.212
+Accuracy on dev set:94.820
+=> Validation accuracy did not improve. Epoch: 67
+[68,  2000] loss: 0.207
+[68,  4000] loss: 0.206
+[68,  6000] loss: 0.211
+[68,  8000] loss: 0.203
+[68, 10000] loss: 0.212
+Accuracy on dev set:95.272
+=> Validation accuracy did not improve. Epoch: 68
+[69,  2000] loss: 0.206
+[69,  4000] loss: 0.203
+[69,  6000] loss: 0.207
+[69,  8000] loss: 0.210
+[69, 10000] loss: 0.212
+Accuracy on dev set:94.471
+=> Validation accuracy did not improve. Epoch: 69
+[70,  2000] loss: 0.203
+[70,  4000] loss: 0.208
+[70,  6000] loss: 0.210
+[70,  8000] loss: 0.207
+[70, 10000] loss: 0.209
+Accuracy on dev set:94.711
+=> Validation accuracy did not improve. Epoch: 70
+[71,  2000] loss: 0.200
+[71,  4000] loss: 0.204
+[71,  6000] loss: 0.212
+[71,  8000] loss: 0.203
+[71, 10000] loss: 0.210
+Accuracy on dev set:94.493
+=> Validation accuracy did not improve. Epoch: 71
+[72,  2000] loss: 0.209
+[72,  4000] loss: 0.211
+[72,  6000] loss: 0.205
+[72,  8000] loss: 0.206
+[72, 10000] loss: 0.198
+Accuracy on dev set:95.036
+=> Validation accuracy did not improve. Epoch: 72
+[73,  2000] loss: 0.204
+[73,  4000] loss: 0.203
+[73,  6000] loss: 0.208
+[73,  8000] loss: 0.205
+[73, 10000] loss: 0.207
+Accuracy on dev set:95.209
+=> Validation accuracy did not improve. Epoch: 73
+[74,  2000] loss: 0.203
+[74,  4000] loss: 0.203
+[74,  6000] loss: 0.202
+[74,  8000] loss: 0.205
+[74, 10000] loss: 0.210
+Accuracy on dev set:94.662
+=> Validation accuracy did not improve. Epoch: 74
+[75,  2000] loss: 0.203
+[75,  4000] loss: 0.207
+[75,  6000] loss: 0.203
+[75,  8000] loss: 0.204
+[75, 10000] loss: 0.201
+Accuracy on dev set:95.467
+=> Saving a new best. Epoch: 75
+[76,  2000] loss: 0.206
+[76,  4000] loss: 0.199
+[76,  6000] loss: 0.204
+[76,  8000] loss: 0.203
+[76, 10000] loss: 0.204
+Accuracy on dev set:95.008
+=> Validation accuracy did not improve. Epoch: 76
+[77,  2000] loss: 0.203
+[77,  4000] loss: 0.207
+[77,  6000] loss: 0.203
+[77,  8000] loss: 0.202
+[77, 10000] loss: 0.200
+Accuracy on dev set:95.448
+=> Validation accuracy did not improve. Epoch: 77
+[78,  2000] loss: 0.200
+[78,  4000] loss: 0.201
+[78,  6000] loss: 0.199
+[78,  8000] loss: 0.205
+[78, 10000] loss: 0.208
+Accuracy on dev set:95.242
+=> Validation accuracy did not improve. Epoch: 78
+[79,  2000] loss: 0.203
+[79,  4000] loss: 0.196
+[79,  6000] loss: 0.204
+[79,  8000] loss: 0.197
+[79, 10000] loss: 0.207
+Accuracy on dev set:95.393
+=> Validation accuracy did not improve. Epoch: 79
+[80,  2000] loss: 0.201
+[80,  4000] loss: 0.202
+[80,  6000] loss: 0.201
+[80,  8000] loss: 0.203
+[80, 10000] loss: 0.201
+Accuracy on dev set:94.904
+=> Validation accuracy did not improve. Epoch: 80
+[81,  2000] loss: 0.201
+[81,  4000] loss: 0.202
+[81,  6000] loss: 0.200
+[81,  8000] loss: 0.199
+[81, 10000] loss: 0.202
+Accuracy on dev set:95.400
+=> Validation accuracy did not improve. Epoch: 81
+[82,  2000] loss: 0.197
+[82,  4000] loss: 0.201
+[82,  6000] loss: 0.200
+[82,  8000] loss: 0.201
+[82, 10000] loss: 0.202
+Accuracy on dev set:95.095
+=> Validation accuracy did not improve. Epoch: 82
+[83,  2000] loss: 0.198
+[83,  4000] loss: 0.201
+[83,  6000] loss: 0.198
+[83,  8000] loss: 0.196
+[83, 10000] loss: 0.203
+Accuracy on dev set:95.439
+=> Validation accuracy did not improve. Epoch: 83
+[84,  2000] loss: 0.200
+[84,  4000] loss: 0.195
+[84,  6000] loss: 0.200
+[84,  8000] loss: 0.205
+[84, 10000] loss: 0.196
+Accuracy on dev set:95.441
+=> Validation accuracy did not improve. Epoch: 84
+[85,  2000] loss: 0.202
+[85,  4000] loss: 0.195
+[85,  6000] loss: 0.205
+[85,  8000] loss: 0.196
+[85, 10000] loss: 0.195
+Accuracy on dev set:94.454
+=> Validation accuracy did not improve. Epoch: 85
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  5   | 94.43 | 92.03 | 84.42 | 98.58 | 93.86 | 94.89 |    47    |   95.209   |
+|      |   8   |   2   |       |   7   |       |   1   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  6   | 94.79 | 92.24 | 88.15 | 95.90 | 93.26 | 95.98 |    75    |   95.467   |
+|      |   2   |   5   |       |   1   |   9   |   7   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 55.436
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.370
+[1,  6000] loss: 1.363
+[1,  8000] loss: 1.350
+[1, 10000] loss: 1.325
+Accuracy on dev set:71.357
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.178
+[2,  4000] loss: 0.927
+[2,  6000] loss: 0.670
+[2,  8000] loss: 0.581
+[2, 10000] loss: 0.541
+Accuracy on dev set:90.497
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.515
+[3,  4000] loss: 0.495
+[3,  6000] loss: 0.491
+[3,  8000] loss: 0.474
+[3, 10000] loss: 0.464
+Accuracy on dev set:91.513
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.452
+[4,  4000] loss: 0.452
+[4,  6000] loss: 0.447
+[4,  8000] loss: 0.442
+[4, 10000] loss: 0.436
+Accuracy on dev set:92.102
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.424
+[5,  4000] loss: 0.427
+[5,  6000] loss: 0.408
+[5,  8000] loss: 0.417
+[5, 10000] loss: 0.413
+Accuracy on dev set:92.241
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.397
+[6,  4000] loss: 0.407
+[6,  6000] loss: 0.401
+[6,  8000] loss: 0.390
+[6, 10000] loss: 0.389
+Accuracy on dev set:92.379
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.386
+[7,  4000] loss: 0.380
+[7,  6000] loss: 0.382
+[7,  8000] loss: 0.377
+[7, 10000] loss: 0.373
+Accuracy on dev set:92.569
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.372
+[8,  4000] loss: 0.371
+[8,  6000] loss: 0.368
+[8,  8000] loss: 0.361
+[8, 10000] loss: 0.361
+Accuracy on dev set:92.564
+=> Validation accuracy did not improve. Epoch: 8
+[9,  2000] loss: 0.361
+[9,  4000] loss: 0.361
+[9,  6000] loss: 0.350
+[9,  8000] loss: 0.358
+[9, 10000] loss: 0.351
+Accuracy on dev set:92.862
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.354
+[10,  4000] loss: 0.348
+[10,  6000] loss: 0.348
+[10,  8000] loss: 0.345
+[10, 10000] loss: 0.345
+Accuracy on dev set:93.252
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.340
+[11,  4000] loss: 0.343
+[11,  6000] loss: 0.343
+[11,  8000] loss: 0.337
+[11, 10000] loss: 0.336
+Accuracy on dev set:92.592
+=> Validation accuracy did not improve. Epoch: 11
+[12,  2000] loss: 0.328
+[12,  4000] loss: 0.333
+[12,  6000] loss: 0.336
+[12,  8000] loss: 0.333
+[12, 10000] loss: 0.330
+Accuracy on dev set:93.325
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.325
+[13,  4000] loss: 0.323
+[13,  6000] loss: 0.322
+[13,  8000] loss: 0.323
+[13, 10000] loss: 0.322
+Accuracy on dev set:93.195
+=> Validation accuracy did not improve. Epoch: 13
+[14,  2000] loss: 0.319
+[14,  4000] loss: 0.318
+[14,  6000] loss: 0.315
+[14,  8000] loss: 0.316
+[14, 10000] loss: 0.313
+Accuracy on dev set:93.377
+=> Saving a new best. Epoch: 14
+[15,  2000] loss: 0.314
+[15,  4000] loss: 0.309
+[15,  6000] loss: 0.314
+[15,  8000] loss: 0.313
+[15, 10000] loss: 0.303
+Accuracy on dev set:93.665
+=> Saving a new best. Epoch: 15
+[16,  2000] loss: 0.307
+[16,  4000] loss: 0.303
+[16,  6000] loss: 0.307
+[16,  8000] loss: 0.306
+[16, 10000] loss: 0.299
+Accuracy on dev set:93.487
+=> Validation accuracy did not improve. Epoch: 16
+[17,  2000] loss: 0.303
+[17,  4000] loss: 0.299
+[17,  6000] loss: 0.297
+[17,  8000] loss: 0.298
+[17, 10000] loss: 0.300
+Accuracy on dev set:93.841
+=> Saving a new best. Epoch: 17
+[18,  2000] loss: 0.295
+[18,  4000] loss: 0.295
+[18,  6000] loss: 0.292
+[18,  8000] loss: 0.287
+[18, 10000] loss: 0.299
+Accuracy on dev set:94.023
+=> Saving a new best. Epoch: 18
+[19,  2000] loss: 0.296
+[19,  4000] loss: 0.284
+[19,  6000] loss: 0.287
+[19,  8000] loss: 0.290
+[19, 10000] loss: 0.285
+Accuracy on dev set:94.209
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.290
+[20,  4000] loss: 0.283
+[20,  6000] loss: 0.281
+[20,  8000] loss: 0.284
+[20, 10000] loss: 0.282
+Accuracy on dev set:94.251
+=> Saving a new best. Epoch: 20
+[21,  2000] loss: 0.279
+[21,  4000] loss: 0.284
+[21,  6000] loss: 0.282
+[21,  8000] loss: 0.275
+[21, 10000] loss: 0.284
+Accuracy on dev set:93.764
+=> Validation accuracy did not improve. Epoch: 21
+[22,  2000] loss: 0.276
+[22,  4000] loss: 0.278
+[22,  6000] loss: 0.278
+[22,  8000] loss: 0.276
+[22, 10000] loss: 0.273
+Accuracy on dev set:94.396
+=> Saving a new best. Epoch: 22
+[23,  2000] loss: 0.281
+[23,  4000] loss: 0.269
+[23,  6000] loss: 0.267
+[23,  8000] loss: 0.272
+[23, 10000] loss: 0.282
+Accuracy on dev set:94.364
+=> Validation accuracy did not improve. Epoch: 23
+[24,  2000] loss: 0.272
+[24,  4000] loss: 0.272
+[24,  6000] loss: 0.269
+[24,  8000] loss: 0.276
+[24, 10000] loss: 0.269
+Accuracy on dev set:94.581
+=> Saving a new best. Epoch: 24
+[25,  2000] loss: 0.271
+[25,  4000] loss: 0.268
+[25,  6000] loss: 0.263
+[25,  8000] loss: 0.265
+[25, 10000] loss: 0.271
+Accuracy on dev set:94.213
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.269
+[26,  4000] loss: 0.260
+[26,  6000] loss: 0.271
+[26,  8000] loss: 0.264
+[26, 10000] loss: 0.267
+Accuracy on dev set:94.545
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.262
+[27,  4000] loss: 0.263
+[27,  6000] loss: 0.266
+[27,  8000] loss: 0.267
+[27, 10000] loss: 0.262
+Accuracy on dev set:94.651
+=> Saving a new best. Epoch: 27
+[28,  2000] loss: 0.262
+[28,  4000] loss: 0.260
+[28,  6000] loss: 0.262
+[28,  8000] loss: 0.260
+[28, 10000] loss: 0.260
+Accuracy on dev set:94.398
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.262
+[29,  4000] loss: 0.260
+[29,  6000] loss: 0.259
+[29,  8000] loss: 0.255
+[29, 10000] loss: 0.258
+Accuracy on dev set:94.504
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.255
+[30,  4000] loss: 0.254
+[30,  6000] loss: 0.262
+[30,  8000] loss: 0.258
+[30, 10000] loss: 0.254
+Accuracy on dev set:94.195
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.256
+[31,  4000] loss: 0.254
+[31,  6000] loss: 0.253
+[31,  8000] loss: 0.257
+[31, 10000] loss: 0.254
+Accuracy on dev set:94.471
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.252
+[32,  4000] loss: 0.256
+[32,  6000] loss: 0.253
+[32,  8000] loss: 0.254
+[32, 10000] loss: 0.251
+Accuracy on dev set:94.462
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.251
+[33,  4000] loss: 0.258
+[33,  6000] loss: 0.252
+[33,  8000] loss: 0.249
+[33, 10000] loss: 0.248
+Accuracy on dev set:94.468
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.248
+[34,  4000] loss: 0.244
+[34,  6000] loss: 0.250
+[34,  8000] loss: 0.248
+[34, 10000] loss: 0.252
+Accuracy on dev set:94.668
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.249
+[35,  4000] loss: 0.250
+[35,  6000] loss: 0.246
+[35,  8000] loss: 0.243
+[35, 10000] loss: 0.246
+Accuracy on dev set:94.685
+=> Saving a new best. Epoch: 35
+[36,  2000] loss: 0.246
+[36,  4000] loss: 0.242
+[36,  6000] loss: 0.247
+[36,  8000] loss: 0.248
+[36, 10000] loss: 0.243
+Accuracy on dev set:94.789
+=> Saving a new best. Epoch: 36
+[37,  2000] loss: 0.244
+[37,  4000] loss: 0.241
+[37,  6000] loss: 0.240
+[37,  8000] loss: 0.244
+[37, 10000] loss: 0.242
+Accuracy on dev set:94.487
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.244
+[38,  4000] loss: 0.248
+[38,  6000] loss: 0.239
+[38,  8000] loss: 0.240
+[38, 10000] loss: 0.243
+Accuracy on dev set:94.836
+=> Saving a new best. Epoch: 38
+[39,  2000] loss: 0.241
+[39,  4000] loss: 0.247
+[39,  6000] loss: 0.237
+[39,  8000] loss: 0.241
+[39, 10000] loss: 0.238
+Accuracy on dev set:94.961
+=> Saving a new best. Epoch: 39
+[40,  2000] loss: 0.244
+[40,  4000] loss: 0.241
+[40,  6000] loss: 0.241
+[40,  8000] loss: 0.234
+[40, 10000] loss: 0.234
+Accuracy on dev set:94.894
+=> Validation accuracy did not improve. Epoch: 40
+[41,  2000] loss: 0.238
+[41,  4000] loss: 0.238
+[41,  6000] loss: 0.237
+[41,  8000] loss: 0.240
+[41, 10000] loss: 0.236
+Accuracy on dev set:94.694
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.237
+[42,  4000] loss: 0.235
+[42,  6000] loss: 0.241
+[42,  8000] loss: 0.230
+[42, 10000] loss: 0.234
+Accuracy on dev set:94.706
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.230
+[43,  4000] loss: 0.235
+[43,  6000] loss: 0.239
+[43,  8000] loss: 0.238
+[43, 10000] loss: 0.231
+Accuracy on dev set:94.273
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.233
+[44,  4000] loss: 0.234
+[44,  6000] loss: 0.234
+[44,  8000] loss: 0.233
+[44, 10000] loss: 0.234
+Accuracy on dev set:92.983
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.234
+[45,  4000] loss: 0.231
+[45,  6000] loss: 0.235
+[45,  8000] loss: 0.231
+[45, 10000] loss: 0.229
+Accuracy on dev set:95.017
+=> Saving a new best. Epoch: 45
+[46,  2000] loss: 0.225
+[46,  4000] loss: 0.234
+[46,  6000] loss: 0.232
+[46,  8000] loss: 0.235
+[46, 10000] loss: 0.229
+Accuracy on dev set:94.671
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.231
+[47,  4000] loss: 0.231
+[47,  6000] loss: 0.227
+[47,  8000] loss: 0.227
+[47, 10000] loss: 0.234
+Accuracy on dev set:94.786
+=> Validation accuracy did not improve. Epoch: 47
+[48,  2000] loss: 0.230
+[48,  4000] loss: 0.229
+[48,  6000] loss: 0.234
+[48,  8000] loss: 0.227
+[48, 10000] loss: 0.230
+Accuracy on dev set:95.098
+=> Saving a new best. Epoch: 48
+[49,  2000] loss: 0.224
+[49,  4000] loss: 0.236
+[49,  6000] loss: 0.233
+[49,  8000] loss: 0.226
+[49, 10000] loss: 0.227
+Accuracy on dev set:95.076
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.226
+[50,  4000] loss: 0.233
+[50,  6000] loss: 0.227
+[50,  8000] loss: 0.225
+[50, 10000] loss: 0.227
+Accuracy on dev set:95.160
+=> Saving a new best. Epoch: 50
+[51,  2000] loss: 0.221
+[51,  4000] loss: 0.225
+[51,  6000] loss: 0.228
+[51,  8000] loss: 0.223
+[51, 10000] loss: 0.231
+Accuracy on dev set:95.034
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.224
+[52,  4000] loss: 0.220
+[52,  6000] loss: 0.227
+[52,  8000] loss: 0.227
+[52, 10000] loss: 0.231
+Accuracy on dev set:95.198
+=> Saving a new best. Epoch: 52
+[53,  2000] loss: 0.222
+[53,  4000] loss: 0.228
+[53,  6000] loss: 0.222
+[53,  8000] loss: 0.228
+[53, 10000] loss: 0.220
+Accuracy on dev set:95.165
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.223
+[54,  4000] loss: 0.217
+[54,  6000] loss: 0.230
+[54,  8000] loss: 0.223
+[54, 10000] loss: 0.223
+Accuracy on dev set:94.918
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.221
+[55,  4000] loss: 0.225
+[55,  6000] loss: 0.221
+[55,  8000] loss: 0.224
+[55, 10000] loss: 0.222
+Accuracy on dev set:94.615
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.218
+[56,  4000] loss: 0.222
+[56,  6000] loss: 0.224
+[56,  8000] loss: 0.223
+[56, 10000] loss: 0.217
+Accuracy on dev set:95.213
+=> Saving a new best. Epoch: 56
+[57,  2000] loss: 0.217
+[57,  4000] loss: 0.222
+[57,  6000] loss: 0.219
+[57,  8000] loss: 0.224
+[57, 10000] loss: 0.221
+Accuracy on dev set:94.800
+=> Validation accuracy did not improve. Epoch: 57
+[58,  2000] loss: 0.219
+[58,  4000] loss: 0.221
+[58,  6000] loss: 0.222
+[58,  8000] loss: 0.217
+[58, 10000] loss: 0.220
+Accuracy on dev set:95.014
+=> Validation accuracy did not improve. Epoch: 58
+[59,  2000] loss: 0.218
+[59,  4000] loss: 0.220
+[59,  6000] loss: 0.217
+[59,  8000] loss: 0.224
+[59, 10000] loss: 0.216
+Accuracy on dev set:95.307
+=> Saving a new best. Epoch: 59
+[60,  2000] loss: 0.217
+[60,  4000] loss: 0.219
+[60,  6000] loss: 0.216
+[60,  8000] loss: 0.219
+[60, 10000] loss: 0.221
+Accuracy on dev set:95.133
+=> Validation accuracy did not improve. Epoch: 60
+[61,  2000] loss: 0.218
+[61,  4000] loss: 0.221
+[61,  6000] loss: 0.217
+[61,  8000] loss: 0.215
+[61, 10000] loss: 0.216
+Accuracy on dev set:94.797
+=> Validation accuracy did not improve. Epoch: 61
+[62,  2000] loss: 0.218
+[62,  4000] loss: 0.216
+[62,  6000] loss: 0.214
+[62,  8000] loss: 0.216
+[62, 10000] loss: 0.220
+Accuracy on dev set:94.586
+=> Validation accuracy did not improve. Epoch: 62
+[63,  2000] loss: 0.217
+[63,  4000] loss: 0.217
+[63,  6000] loss: 0.214
+[63,  8000] loss: 0.217
+[63, 10000] loss: 0.213
+Accuracy on dev set:95.108
+=> Validation accuracy did not improve. Epoch: 63
+[64,  2000] loss: 0.212
+[64,  4000] loss: 0.218
+[64,  6000] loss: 0.217
+[64,  8000] loss: 0.215
+[64, 10000] loss: 0.216
+Accuracy on dev set:95.315
+=> Saving a new best. Epoch: 64
+[65,  2000] loss: 0.214
+[65,  4000] loss: 0.214
+[65,  6000] loss: 0.210
+[65,  8000] loss: 0.214
+[65, 10000] loss: 0.215
+Accuracy on dev set:95.230
+=> Validation accuracy did not improve. Epoch: 65
+[66,  2000] loss: 0.215
+[66,  4000] loss: 0.211
+[66,  6000] loss: 0.219
+[66,  8000] loss: 0.211
+[66, 10000] loss: 0.212
+Accuracy on dev set:95.147
+=> Validation accuracy did not improve. Epoch: 66
+[67,  2000] loss: 0.217
+[67,  4000] loss: 0.211
+[67,  6000] loss: 0.213
+[67,  8000] loss: 0.212
+[67, 10000] loss: 0.212
+Accuracy on dev set:95.139
+=> Validation accuracy did not improve. Epoch: 67
+[68,  2000] loss: 0.217
+[68,  4000] loss: 0.210
+[68,  6000] loss: 0.215
+[68,  8000] loss: 0.213
+[68, 10000] loss: 0.207
+Accuracy on dev set:94.868
+=> Validation accuracy did not improve. Epoch: 68
+[69,  2000] loss: 0.209
+[69,  4000] loss: 0.212
+[69,  6000] loss: 0.218
+[69,  8000] loss: 0.208
+[69, 10000] loss: 0.215
+Accuracy on dev set:93.999
+=> Validation accuracy did not improve. Epoch: 69
+[70,  2000] loss: 0.213
+[70,  4000] loss: 0.212
+[70,  6000] loss: 0.209
+[70,  8000] loss: 0.214
+[70, 10000] loss: 0.210
+Accuracy on dev set:95.444
+=> Saving a new best. Epoch: 70
+[71,  2000] loss: 0.210
+[71,  4000] loss: 0.209
+[71,  6000] loss: 0.212
+[71,  8000] loss: 0.211
+[71, 10000] loss: 0.210
+Accuracy on dev set:95.349
+=> Validation accuracy did not improve. Epoch: 71
+[72,  2000] loss: 0.209
+[72,  4000] loss: 0.210
+[72,  6000] loss: 0.215
+[72,  8000] loss: 0.210
+[72, 10000] loss: 0.213
+Accuracy on dev set:95.324
+=> Validation accuracy did not improve. Epoch: 72
+[73,  2000] loss: 0.206
+[73,  4000] loss: 0.210
+[73,  6000] loss: 0.209
+[73,  8000] loss: 0.211
+[73, 10000] loss: 0.206
+Accuracy on dev set:94.660
+=> Validation accuracy did not improve. Epoch: 73
+[74,  2000] loss: 0.209
+[74,  4000] loss: 0.212
+[74,  6000] loss: 0.211
+[74,  8000] loss: 0.206
+[74, 10000] loss: 0.202
+Accuracy on dev set:95.356
+=> Validation accuracy did not improve. Epoch: 74
+[75,  2000] loss: 0.209
+[75,  4000] loss: 0.211
+[75,  6000] loss: 0.209
+[75,  8000] loss: 0.208
+[75, 10000] loss: 0.206
+Accuracy on dev set:94.837
+=> Validation accuracy did not improve. Epoch: 75
+[76,  2000] loss: 0.206
+[76,  4000] loss: 0.209
+[76,  6000] loss: 0.207
+[76,  8000] loss: 0.210
+[76, 10000] loss: 0.209
+Accuracy on dev set:94.602
+=> Validation accuracy did not improve. Epoch: 76
+[77,  2000] loss: 0.209
+[77,  4000] loss: 0.205
+[77,  6000] loss: 0.205
+[77,  8000] loss: 0.212
+[77, 10000] loss: 0.204
+Accuracy on dev set:95.198
+=> Validation accuracy did not improve. Epoch: 77
+[78,  2000] loss: 0.201
+[78,  4000] loss: 0.210
+[78,  6000] loss: 0.203
+[78,  8000] loss: 0.213
+[78, 10000] loss: 0.209
+Accuracy on dev set:94.746
+=> Validation accuracy did not improve. Epoch: 78
+[79,  2000] loss: 0.203
+[79,  4000] loss: 0.207
+[79,  6000] loss: 0.204
+[79,  8000] loss: 0.212
+[79, 10000] loss: 0.203
+Accuracy on dev set:95.327
+=> Validation accuracy did not improve. Epoch: 79
+[80,  2000] loss: 0.206
+[80,  4000] loss: 0.208
+[80,  6000] loss: 0.201
+[80,  8000] loss: 0.204
+[80, 10000] loss: 0.203
+Accuracy on dev set:95.388
+=> Validation accuracy did not improve. Epoch: 80
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  5   | 94.43 | 92.03 | 84.42 | 98.58 | 93.86 | 94.89 |    47    |   95.209   |
+|      |   8   |   2   |       |   7   |       |   1   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  6   | 94.79 | 92.24 | 88.15 | 95.90 | 93.26 | 95.98 |    75    |   95.467   |
+|      |   2   |   5   |       |   1   |   9   |   7   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  7   | 94.58 | 94.90 | 97.97 | 92.42 | 93.79 | 95.19 |    70    |   95.444   |
+|      |   1   |   2   |   8   |   9   |   7   |   9   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 58.25
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.372
+[1,  6000] loss: 1.363
+[1,  8000] loss: 1.349
+[1, 10000] loss: 1.319
+Accuracy on dev set:74.491
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.152
+[2,  4000] loss: 0.870
+[2,  6000] loss: 0.634
+[2,  8000] loss: 0.543
+[2, 10000] loss: 0.528
+Accuracy on dev set:90.270
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.492
+[3,  4000] loss: 0.473
+[3,  6000] loss: 0.467
+[3,  8000] loss: 0.459
+[3, 10000] loss: 0.448
+Accuracy on dev set:91.310
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.437
+[4,  4000] loss: 0.437
+[4,  6000] loss: 0.424
+[4,  8000] loss: 0.430
+[4, 10000] loss: 0.419
+Accuracy on dev set:92.044
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.409
+[5,  4000] loss: 0.412
+[5,  6000] loss: 0.409
+[5,  8000] loss: 0.404
+[5, 10000] loss: 0.392
+Accuracy on dev set:92.201
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.391
+[6,  4000] loss: 0.385
+[6,  6000] loss: 0.385
+[6,  8000] loss: 0.380
+[6, 10000] loss: 0.386
+Accuracy on dev set:92.472
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.377
+[7,  4000] loss: 0.368
+[7,  6000] loss: 0.363
+[7,  8000] loss: 0.377
+[7, 10000] loss: 0.366
+Accuracy on dev set:92.598
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.361
+[8,  4000] loss: 0.355
+[8,  6000] loss: 0.356
+[8,  8000] loss: 0.366
+[8, 10000] loss: 0.355
+Accuracy on dev set:92.849
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.348
+[9,  4000] loss: 0.348
+[9,  6000] loss: 0.354
+[9,  8000] loss: 0.344
+[9, 10000] loss: 0.348
+Accuracy on dev set:92.880
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.341
+[10,  4000] loss: 0.342
+[10,  6000] loss: 0.334
+[10,  8000] loss: 0.339
+[10, 10000] loss: 0.335
+Accuracy on dev set:93.220
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.335
+[11,  4000] loss: 0.333
+[11,  6000] loss: 0.330
+[11,  8000] loss: 0.330
+[11, 10000] loss: 0.328
+Accuracy on dev set:93.166
+=> Validation accuracy did not improve. Epoch: 11
+[12,  2000] loss: 0.326
+[12,  4000] loss: 0.328
+[12,  6000] loss: 0.319
+[12,  8000] loss: 0.322
+[12, 10000] loss: 0.318
+Accuracy on dev set:93.304
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.314
+[13,  4000] loss: 0.316
+[13,  6000] loss: 0.317
+[13,  8000] loss: 0.317
+[13, 10000] loss: 0.315
+Accuracy on dev set:93.170
+=> Validation accuracy did not improve. Epoch: 13
+[14,  2000] loss: 0.311
+[14,  4000] loss: 0.309
+[14,  6000] loss: 0.312
+[14,  8000] loss: 0.312
+[14, 10000] loss: 0.302
+Accuracy on dev set:93.523
+=> Saving a new best. Epoch: 14
+[15,  2000] loss: 0.305
+[15,  4000] loss: 0.306
+[15,  6000] loss: 0.299
+[15,  8000] loss: 0.307
+[15, 10000] loss: 0.305
+Accuracy on dev set:93.389
+=> Validation accuracy did not improve. Epoch: 15
+[16,  2000] loss: 0.300
+[16,  4000] loss: 0.300
+[16,  6000] loss: 0.296
+[16,  8000] loss: 0.293
+[16, 10000] loss: 0.296
+Accuracy on dev set:93.096
+=> Validation accuracy did not improve. Epoch: 16
+[17,  2000] loss: 0.292
+[17,  4000] loss: 0.286
+[17,  6000] loss: 0.297
+[17,  8000] loss: 0.293
+[17, 10000] loss: 0.291
+Accuracy on dev set:93.181
+=> Validation accuracy did not improve. Epoch: 17
+[18,  2000] loss: 0.296
+[18,  4000] loss: 0.285
+[18,  6000] loss: 0.291
+[18,  8000] loss: 0.286
+[18, 10000] loss: 0.277
+Accuracy on dev set:94.068
+=> Saving a new best. Epoch: 18
+[19,  2000] loss: 0.283
+[19,  4000] loss: 0.282
+[19,  6000] loss: 0.280
+[19,  8000] loss: 0.285
+[19, 10000] loss: 0.285
+Accuracy on dev set:93.665
+=> Validation accuracy did not improve. Epoch: 19
+[20,  2000] loss: 0.282
+[20,  4000] loss: 0.281
+[20,  6000] loss: 0.276
+[20,  8000] loss: 0.282
+[20, 10000] loss: 0.273
+Accuracy on dev set:93.700
+=> Validation accuracy did not improve. Epoch: 20
+[21,  2000] loss: 0.280
+[21,  4000] loss: 0.279
+[21,  6000] loss: 0.268
+[21,  8000] loss: 0.270
+[21, 10000] loss: 0.277
+Accuracy on dev set:94.117
+=> Saving a new best. Epoch: 21
+[22,  2000] loss: 0.273
+[22,  4000] loss: 0.270
+[22,  6000] loss: 0.272
+[22,  8000] loss: 0.270
+[22, 10000] loss: 0.271
+Accuracy on dev set:94.191
+=> Saving a new best. Epoch: 22
+[23,  2000] loss: 0.273
+[23,  4000] loss: 0.271
+[23,  6000] loss: 0.263
+[23,  8000] loss: 0.265
+[23, 10000] loss: 0.269
+Accuracy on dev set:94.318
+=> Saving a new best. Epoch: 23
+[24,  2000] loss: 0.268
+[24,  4000] loss: 0.269
+[24,  6000] loss: 0.268
+[24,  8000] loss: 0.261
+[24, 10000] loss: 0.270
+Accuracy on dev set:94.501
+=> Saving a new best. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.261
+[25,  6000] loss: 0.268
+[25,  8000] loss: 0.262
+[25, 10000] loss: 0.268
+Accuracy on dev set:94.521
+=> Saving a new best. Epoch: 25
+[26,  2000] loss: 0.262
+[26,  4000] loss: 0.262
+[26,  6000] loss: 0.261
+[26,  8000] loss: 0.262
+[26, 10000] loss: 0.257
+Accuracy on dev set:94.636
+=> Saving a new best. Epoch: 26
+[27,  2000] loss: 0.260
+[27,  4000] loss: 0.255
+[27,  6000] loss: 0.255
+[27,  8000] loss: 0.264
+[27, 10000] loss: 0.259
+Accuracy on dev set:94.649
+=> Saving a new best. Epoch: 27
+[28,  2000] loss: 0.260
+[28,  4000] loss: 0.255
+[28,  6000] loss: 0.260
+[28,  8000] loss: 0.257
+[28, 10000] loss: 0.249
+Accuracy on dev set:93.890
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.262
+[29,  4000] loss: 0.258
+[29,  6000] loss: 0.250
+[29,  8000] loss: 0.259
+[29, 10000] loss: 0.254
+Accuracy on dev set:94.695
+=> Saving a new best. Epoch: 29
+[30,  2000] loss: 0.248
+[30,  4000] loss: 0.258
+[30,  6000] loss: 0.251
+[30,  8000] loss: 0.252
+[30, 10000] loss: 0.254
+Accuracy on dev set:94.813
+=> Saving a new best. Epoch: 30
+[31,  2000] loss: 0.249
+[31,  4000] loss: 0.248
+[31,  6000] loss: 0.244
+[31,  8000] loss: 0.259
+[31, 10000] loss: 0.254
+Accuracy on dev set:94.752
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.252
+[32,  4000] loss: 0.246
+[32,  6000] loss: 0.249
+[32,  8000] loss: 0.250
+[32, 10000] loss: 0.250
+Accuracy on dev set:94.631
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.248
+[33,  4000] loss: 0.243
+[33,  6000] loss: 0.250
+[33,  8000] loss: 0.249
+[33, 10000] loss: 0.250
+Accuracy on dev set:93.883
+=> Validation accuracy did not improve. Epoch: 33
+[34,  2000] loss: 0.243
+[34,  4000] loss: 0.241
+[34,  6000] loss: 0.248
+[34,  8000] loss: 0.248
+[34, 10000] loss: 0.251
+Accuracy on dev set:94.960
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.238
+[35,  4000] loss: 0.250
+[35,  6000] loss: 0.245
+[35,  8000] loss: 0.244
+[35, 10000] loss: 0.246
+Accuracy on dev set:94.970
+=> Saving a new best. Epoch: 35
+[36,  2000] loss: 0.243
+[36,  4000] loss: 0.248
+[36,  6000] loss: 0.241
+[36,  8000] loss: 0.237
+[36, 10000] loss: 0.245
+Accuracy on dev set:94.856
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.238
+[37,  4000] loss: 0.239
+[37,  6000] loss: 0.239
+[37,  8000] loss: 0.242
+[37, 10000] loss: 0.244
+Accuracy on dev set:94.838
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.233
+[38,  4000] loss: 0.244
+[38,  6000] loss: 0.242
+[38,  8000] loss: 0.240
+[38, 10000] loss: 0.237
+Accuracy on dev set:94.935
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.241
+[39,  4000] loss: 0.240
+[39,  6000] loss: 0.233
+[39,  8000] loss: 0.238
+[39, 10000] loss: 0.238
+Accuracy on dev set:94.933
+=> Validation accuracy did not improve. Epoch: 39
+[40,  2000] loss: 0.235
+[40,  4000] loss: 0.232
+[40,  6000] loss: 0.242
+[40,  8000] loss: 0.241
+[40, 10000] loss: 0.236
+Accuracy on dev set:95.012
+=> Saving a new best. Epoch: 40
+[41,  2000] loss: 0.236
+[41,  4000] loss: 0.235
+[41,  6000] loss: 0.235
+[41,  8000] loss: 0.232
+[41, 10000] loss: 0.236
+Accuracy on dev set:94.701
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.236
+[42,  4000] loss: 0.235
+[42,  6000] loss: 0.235
+[42,  8000] loss: 0.231
+[42, 10000] loss: 0.230
+Accuracy on dev set:94.603
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.230
+[43,  4000] loss: 0.231
+[43,  6000] loss: 0.236
+[43,  8000] loss: 0.230
+[43, 10000] loss: 0.234
+Accuracy on dev set:95.009
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.231
+[44,  4000] loss: 0.235
+[44,  6000] loss: 0.232
+[44,  8000] loss: 0.229
+[44, 10000] loss: 0.228
+Accuracy on dev set:94.786
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.224
+[45,  4000] loss: 0.230
+[45,  6000] loss: 0.232
+[45,  8000] loss: 0.234
+[45, 10000] loss: 0.225
+Accuracy on dev set:94.746
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.228
+[46,  4000] loss: 0.228
+[46,  6000] loss: 0.231
+[46,  8000] loss: 0.228
+[46, 10000] loss: 0.225
+Accuracy on dev set:94.991
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.227
+[47,  4000] loss: 0.223
+[47,  6000] loss: 0.225
+[47,  8000] loss: 0.229
+[47, 10000] loss: 0.231
+Accuracy on dev set:95.120
+=> Saving a new best. Epoch: 47
+[48,  2000] loss: 0.227
+[48,  4000] loss: 0.227
+[48,  6000] loss: 0.230
+[48,  8000] loss: 0.224
+[48, 10000] loss: 0.225
+Accuracy on dev set:95.234
+=> Saving a new best. Epoch: 48
+[49,  2000] loss: 0.228
+[49,  4000] loss: 0.228
+[49,  6000] loss: 0.222
+[49,  8000] loss: 0.224
+[49, 10000] loss: 0.225
+Accuracy on dev set:94.796
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.230
+[50,  4000] loss: 0.219
+[50,  6000] loss: 0.218
+[50,  8000] loss: 0.222
+[50, 10000] loss: 0.229
+Accuracy on dev set:95.115
+=> Validation accuracy did not improve. Epoch: 50
+[51,  2000] loss: 0.222
+[51,  4000] loss: 0.225
+[51,  6000] loss: 0.220
+[51,  8000] loss: 0.220
+[51, 10000] loss: 0.229
+Accuracy on dev set:95.119
+=> Validation accuracy did not improve. Epoch: 51
+[52,  2000] loss: 0.225
+[52,  4000] loss: 0.223
+[52,  6000] loss: 0.221
+[52,  8000] loss: 0.222
+[52, 10000] loss: 0.220
+Accuracy on dev set:94.912
+=> Validation accuracy did not improve. Epoch: 52
+[53,  2000] loss: 0.220
+[53,  4000] loss: 0.219
+[53,  6000] loss: 0.225
+[53,  8000] loss: 0.222
+[53, 10000] loss: 0.221
+Accuracy on dev set:95.110
+=> Validation accuracy did not improve. Epoch: 53
+[54,  2000] loss: 0.219
+[54,  4000] loss: 0.220
+[54,  6000] loss: 0.220
+[54,  8000] loss: 0.220
+[54, 10000] loss: 0.220
+Accuracy on dev set:95.003
+=> Validation accuracy did not improve. Epoch: 54
+[55,  2000] loss: 0.215
+[55,  4000] loss: 0.219
+[55,  6000] loss: 0.220
+[55,  8000] loss: 0.218
+[55, 10000] loss: 0.223
+Accuracy on dev set:95.133
+=> Validation accuracy did not improve. Epoch: 55
+[56,  2000] loss: 0.218
+[56,  4000] loss: 0.216
+[56,  6000] loss: 0.221
+[56,  8000] loss: 0.217
+[56, 10000] loss: 0.218
+Accuracy on dev set:95.043
+=> Validation accuracy did not improve. Epoch: 56
+[57,  2000] loss: 0.218
+[57,  4000] loss: 0.220
+[57,  6000] loss: 0.215
+[57,  8000] loss: 0.217
+[57, 10000] loss: 0.220
+Accuracy on dev set:94.948
+=> Validation accuracy did not improve. Epoch: 57
+[58,  2000] loss: 0.216
+[58,  4000] loss: 0.212
+[58,  6000] loss: 0.219
+[58,  8000] loss: 0.215
+[58, 10000] loss: 0.221
+Accuracy on dev set:95.128
+=> Validation accuracy did not improve. Epoch: 58
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  5   | 94.43 | 92.03 | 84.42 | 98.58 | 93.86 | 94.89 |    47    |   95.209   |
+|      |   8   |   2   |       |   7   |       |   1   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  6   | 94.79 | 92.24 | 88.15 | 95.90 | 93.26 | 95.98 |    75    |   95.467   |
+|      |   2   |   5   |       |   1   |   9   |   7   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  7   | 94.58 | 94.90 | 97.97 | 92.42 | 93.79 | 95.19 |    70    |   95.444   |
+|      |   1   |   2   |   8   |   9   |   7   |   9   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  8   | 94.52 | 90.77 | 91.63 | 90.16 | 93.19 | 95.58 |    48    |   95.234   |
+|      |   8   |   9   |       |   8   |   4   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 53.928
+
+[1,  2000] loss: 1.378
+[1,  4000] loss: 1.370
+[1,  6000] loss: 1.362
+[1,  8000] loss: 1.350
+[1, 10000] loss: 1.318
+Accuracy on dev set:72.334
+=> Saving a new best. Epoch: 1
+[2,  2000] loss: 1.154
+[2,  4000] loss: 0.884
+[2,  6000] loss: 0.640
+[2,  8000] loss: 0.566
+[2, 10000] loss: 0.529
+Accuracy on dev set:90.486
+=> Saving a new best. Epoch: 2
+[3,  2000] loss: 0.501
+[3,  4000] loss: 0.491
+[3,  6000] loss: 0.485
+[3,  8000] loss: 0.475
+[3, 10000] loss: 0.461
+Accuracy on dev set:91.516
+=> Saving a new best. Epoch: 3
+[4,  2000] loss: 0.452
+[4,  4000] loss: 0.454
+[4,  6000] loss: 0.443
+[4,  8000] loss: 0.433
+[4, 10000] loss: 0.435
+Accuracy on dev set:91.895
+=> Saving a new best. Epoch: 4
+[5,  2000] loss: 0.420
+[5,  4000] loss: 0.414
+[5,  6000] loss: 0.422
+[5,  8000] loss: 0.414
+[5, 10000] loss: 0.407
+Accuracy on dev set:92.319
+=> Saving a new best. Epoch: 5
+[6,  2000] loss: 0.396
+[6,  4000] loss: 0.399
+[6,  6000] loss: 0.397
+[6,  8000] loss: 0.391
+[6, 10000] loss: 0.386
+Accuracy on dev set:92.499
+=> Saving a new best. Epoch: 6
+[7,  2000] loss: 0.388
+[7,  4000] loss: 0.377
+[7,  6000] loss: 0.375
+[7,  8000] loss: 0.377
+[7, 10000] loss: 0.374
+Accuracy on dev set:92.656
+=> Saving a new best. Epoch: 7
+[8,  2000] loss: 0.370
+[8,  4000] loss: 0.361
+[8,  6000] loss: 0.358
+[8,  8000] loss: 0.365
+[8, 10000] loss: 0.366
+Accuracy on dev set:92.725
+=> Saving a new best. Epoch: 8
+[9,  2000] loss: 0.351
+[9,  4000] loss: 0.355
+[9,  6000] loss: 0.363
+[9,  8000] loss: 0.349
+[9, 10000] loss: 0.353
+Accuracy on dev set:93.076
+=> Saving a new best. Epoch: 9
+[10,  2000] loss: 0.349
+[10,  4000] loss: 0.347
+[10,  6000] loss: 0.345
+[10,  8000] loss: 0.338
+[10, 10000] loss: 0.340
+Accuracy on dev set:93.278
+=> Saving a new best. Epoch: 10
+[11,  2000] loss: 0.337
+[11,  4000] loss: 0.334
+[11,  6000] loss: 0.334
+[11,  8000] loss: 0.332
+[11, 10000] loss: 0.335
+Accuracy on dev set:93.408
+=> Saving a new best. Epoch: 11
+[12,  2000] loss: 0.327
+[12,  4000] loss: 0.327
+[12,  6000] loss: 0.326
+[12,  8000] loss: 0.325
+[12, 10000] loss: 0.330
+Accuracy on dev set:93.453
+=> Saving a new best. Epoch: 12
+[13,  2000] loss: 0.330
+[13,  4000] loss: 0.321
+[13,  6000] loss: 0.319
+[13,  8000] loss: 0.319
+[13, 10000] loss: 0.314
+Accuracy on dev set:93.289
+=> Validation accuracy did not improve. Epoch: 13
+[14,  2000] loss: 0.317
+[14,  4000] loss: 0.313
+[14,  6000] loss: 0.313
+[14,  8000] loss: 0.316
+[14, 10000] loss: 0.308
+Accuracy on dev set:93.590
+=> Saving a new best. Epoch: 14
+[15,  2000] loss: 0.310
+[15,  4000] loss: 0.307
+[15,  6000] loss: 0.313
+[15,  8000] loss: 0.304
+[15, 10000] loss: 0.302
+Accuracy on dev set:93.786
+=> Saving a new best. Epoch: 15
+[16,  2000] loss: 0.301
+[16,  4000] loss: 0.302
+[16,  6000] loss: 0.300
+[16,  8000] loss: 0.297
+[16, 10000] loss: 0.301
+Accuracy on dev set:93.751
+=> Validation accuracy did not improve. Epoch: 16
+[17,  2000] loss: 0.296
+[17,  4000] loss: 0.295
+[17,  6000] loss: 0.294
+[17,  8000] loss: 0.298
+[17, 10000] loss: 0.288
+Accuracy on dev set:94.146
+=> Saving a new best. Epoch: 17
+[18,  2000] loss: 0.290
+[18,  4000] loss: 0.293
+[18,  6000] loss: 0.294
+[18,  8000] loss: 0.289
+[18, 10000] loss: 0.278
+Accuracy on dev set:94.229
+=> Saving a new best. Epoch: 18
+[19,  2000] loss: 0.287
+[19,  4000] loss: 0.285
+[19,  6000] loss: 0.280
+[19,  8000] loss: 0.289
+[19, 10000] loss: 0.281
+Accuracy on dev set:94.275
+=> Saving a new best. Epoch: 19
+[20,  2000] loss: 0.280
+[20,  4000] loss: 0.282
+[20,  6000] loss: 0.278
+[20,  8000] loss: 0.280
+[20, 10000] loss: 0.283
+Accuracy on dev set:94.334
+=> Saving a new best. Epoch: 20
+[21,  2000] loss: 0.280
+[21,  4000] loss: 0.278
+[21,  6000] loss: 0.275
+[21,  8000] loss: 0.277
+[21, 10000] loss: 0.269
+Accuracy on dev set:94.387
+=> Saving a new best. Epoch: 21
+[22,  2000] loss: 0.272
+[22,  4000] loss: 0.276
+[22,  6000] loss: 0.272
+[22,  8000] loss: 0.272
+[22, 10000] loss: 0.270
+Accuracy on dev set:94.417
+=> Saving a new best. Epoch: 22
+[23,  2000] loss: 0.267
+[23,  4000] loss: 0.274
+[23,  6000] loss: 0.274
+[23,  8000] loss: 0.270
+[23, 10000] loss: 0.266
+Accuracy on dev set:94.485
+=> Saving a new best. Epoch: 23
+[24,  2000] loss: 0.265
+[24,  4000] loss: 0.264
+[24,  6000] loss: 0.273
+[24,  8000] loss: 0.265
+[24, 10000] loss: 0.267
+Accuracy on dev set:94.419
+=> Validation accuracy did not improve. Epoch: 24
+[25,  2000] loss: 0.263
+[25,  4000] loss: 0.260
+[25,  6000] loss: 0.263
+[25,  8000] loss: 0.265
+[25, 10000] loss: 0.269
+Accuracy on dev set:94.404
+=> Validation accuracy did not improve. Epoch: 25
+[26,  2000] loss: 0.263
+[26,  4000] loss: 0.259
+[26,  6000] loss: 0.267
+[26,  8000] loss: 0.260
+[26, 10000] loss: 0.262
+Accuracy on dev set:94.454
+=> Validation accuracy did not improve. Epoch: 26
+[27,  2000] loss: 0.258
+[27,  4000] loss: 0.258
+[27,  6000] loss: 0.265
+[27,  8000] loss: 0.262
+[27, 10000] loss: 0.255
+Accuracy on dev set:94.631
+=> Saving a new best. Epoch: 27
+[28,  2000] loss: 0.257
+[28,  4000] loss: 0.256
+[28,  6000] loss: 0.256
+[28,  8000] loss: 0.258
+[28, 10000] loss: 0.256
+Accuracy on dev set:94.456
+=> Validation accuracy did not improve. Epoch: 28
+[29,  2000] loss: 0.253
+[29,  4000] loss: 0.252
+[29,  6000] loss: 0.259
+[29,  8000] loss: 0.257
+[29, 10000] loss: 0.255
+Accuracy on dev set:94.279
+=> Validation accuracy did not improve. Epoch: 29
+[30,  2000] loss: 0.256
+[30,  4000] loss: 0.255
+[30,  6000] loss: 0.247
+[30,  8000] loss: 0.254
+[30, 10000] loss: 0.254
+Accuracy on dev set:94.521
+=> Validation accuracy did not improve. Epoch: 30
+[31,  2000] loss: 0.255
+[31,  4000] loss: 0.251
+[31,  6000] loss: 0.250
+[31,  8000] loss: 0.251
+[31, 10000] loss: 0.255
+Accuracy on dev set:94.606
+=> Validation accuracy did not improve. Epoch: 31
+[32,  2000] loss: 0.240
+[32,  4000] loss: 0.257
+[32,  6000] loss: 0.252
+[32,  8000] loss: 0.244
+[32, 10000] loss: 0.252
+Accuracy on dev set:94.416
+=> Validation accuracy did not improve. Epoch: 32
+[33,  2000] loss: 0.245
+[33,  4000] loss: 0.245
+[33,  6000] loss: 0.250
+[33,  8000] loss: 0.246
+[33, 10000] loss: 0.252
+Accuracy on dev set:94.700
+=> Saving a new best. Epoch: 33
+[34,  2000] loss: 0.250
+[34,  4000] loss: 0.248
+[34,  6000] loss: 0.243
+[34,  8000] loss: 0.245
+[34, 10000] loss: 0.242
+Accuracy on dev set:94.706
+=> Saving a new best. Epoch: 34
+[35,  2000] loss: 0.245
+[35,  4000] loss: 0.243
+[35,  6000] loss: 0.244
+[35,  8000] loss: 0.247
+[35, 10000] loss: 0.243
+Accuracy on dev set:94.820
+=> Saving a new best. Epoch: 35
+[36,  2000] loss: 0.246
+[36,  4000] loss: 0.238
+[36,  6000] loss: 0.243
+[36,  8000] loss: 0.242
+[36, 10000] loss: 0.241
+Accuracy on dev set:94.606
+=> Validation accuracy did not improve. Epoch: 36
+[37,  2000] loss: 0.238
+[37,  4000] loss: 0.241
+[37,  6000] loss: 0.246
+[37,  8000] loss: 0.241
+[37, 10000] loss: 0.237
+Accuracy on dev set:94.346
+=> Validation accuracy did not improve. Epoch: 37
+[38,  2000] loss: 0.235
+[38,  4000] loss: 0.243
+[38,  6000] loss: 0.241
+[38,  8000] loss: 0.236
+[38, 10000] loss: 0.239
+Accuracy on dev set:94.752
+=> Validation accuracy did not improve. Epoch: 38
+[39,  2000] loss: 0.235
+[39,  4000] loss: 0.239
+[39,  6000] loss: 0.238
+[39,  8000] loss: 0.240
+[39, 10000] loss: 0.234
+Accuracy on dev set:94.847
+=> Saving a new best. Epoch: 39
+[40,  2000] loss: 0.236
+[40,  4000] loss: 0.235
+[40,  6000] loss: 0.238
+[40,  8000] loss: 0.231
+[40, 10000] loss: 0.244
+Accuracy on dev set:95.063
+=> Saving a new best. Epoch: 40
+[41,  2000] loss: 0.230
+[41,  4000] loss: 0.233
+[41,  6000] loss: 0.239
+[41,  8000] loss: 0.235
+[41, 10000] loss: 0.238
+Accuracy on dev set:94.593
+=> Validation accuracy did not improve. Epoch: 41
+[42,  2000] loss: 0.236
+[42,  4000] loss: 0.226
+[42,  6000] loss: 0.233
+[42,  8000] loss: 0.240
+[42, 10000] loss: 0.237
+Accuracy on dev set:94.635
+=> Validation accuracy did not improve. Epoch: 42
+[43,  2000] loss: 0.236
+[43,  4000] loss: 0.231
+[43,  6000] loss: 0.234
+[43,  8000] loss: 0.231
+[43, 10000] loss: 0.228
+Accuracy on dev set:94.908
+=> Validation accuracy did not improve. Epoch: 43
+[44,  2000] loss: 0.227
+[44,  4000] loss: 0.227
+[44,  6000] loss: 0.236
+[44,  8000] loss: 0.235
+[44, 10000] loss: 0.228
+Accuracy on dev set:94.452
+=> Validation accuracy did not improve. Epoch: 44
+[45,  2000] loss: 0.232
+[45,  4000] loss: 0.228
+[45,  6000] loss: 0.228
+[45,  8000] loss: 0.230
+[45, 10000] loss: 0.230
+Accuracy on dev set:94.461
+=> Validation accuracy did not improve. Epoch: 45
+[46,  2000] loss: 0.228
+[46,  4000] loss: 0.225
+[46,  6000] loss: 0.237
+[46,  8000] loss: 0.230
+[46, 10000] loss: 0.228
+Accuracy on dev set:94.876
+=> Validation accuracy did not improve. Epoch: 46
+[47,  2000] loss: 0.229
+[47,  4000] loss: 0.228
+[47,  6000] loss: 0.228
+[47,  8000] loss: 0.229
+[47, 10000] loss: 0.226
+Accuracy on dev set:94.105
+=> Validation accuracy did not improve. Epoch: 47
+[48,  2000] loss: 0.227
+[48,  4000] loss: 0.225
+[48,  6000] loss: 0.228
+[48,  8000] loss: 0.228
+[48, 10000] loss: 0.226
+Accuracy on dev set:94.851
+=> Validation accuracy did not improve. Epoch: 48
+[49,  2000] loss: 0.226
+[49,  4000] loss: 0.228
+[49,  6000] loss: 0.224
+[49,  8000] loss: 0.226
+[49, 10000] loss: 0.221
+Accuracy on dev set:94.783
+=> Validation accuracy did not improve. Epoch: 49
+[50,  2000] loss: 0.225
+[50,  4000] loss: 0.224
+[50,  6000] loss: 0.226
+[50,  8000] loss: 0.229
+[50, 10000] loss: 0.225
+Accuracy on dev set:95.041
+=> Validation accuracy did not improve. Epoch: 50
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+| Fold | Acc_L | Acc_U | R_0_U | R_1_U | R_0_L | R_1_L | Stop_epo | Accuracy_d |
+|      |       |       |       |       |       |       |    ch    |     ev     |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  1   | 94.22 | 93.8  | 96.73 | 91.92 | 93.65 | 94.68 |    52    |   94.869   |
+|      |   9   |       |   5   |       |   9   |   2   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  2   | 94.62 | 92.36 | 91.20 | 93.18 | 92.59 | 96.24 |    65    |   94.666   |
+|      |   6   |   1   |   5   |   5   |   1   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  3   | 93.75 | 92.89 | 92.03 | 93.59 | 90.67 | 96.17 |    34    |   93.919   |
+|      |   4   |   2   |   5   |   1   |   9   |   6   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  4   | 94.38 | 89.37 | 80.98 | 99.40 | 92.15 | 96.12 |    35    |   94.627   |
+|      |   9   |   3   |   2   |   8   |   4   |       |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  5   | 94.43 | 92.03 | 84.42 | 98.58 | 93.86 | 94.89 |    47    |   95.209   |
+|      |   8   |   2   |       |   7   |       |   1   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  6   | 94.79 | 92.24 | 88.15 | 95.90 | 93.26 | 95.98 |    75    |   95.467   |
+|      |   2   |   5   |       |   1   |   9   |   7   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  7   | 94.58 | 94.90 | 97.97 | 92.42 | 93.79 | 95.19 |    70    |   95.444   |
+|      |   1   |   2   |   8   |   9   |   7   |   9   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  8   | 94.52 | 90.77 | 91.63 | 90.16 | 93.19 | 95.58 |    48    |   95.234   |
+|      |   8   |   9   |       |   8   |   4   |   4   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+|  9   | 94.37 | 92.70 | 87.41 | 97.22 | 92.92 | 95.52 |    40    |   95.063   |
+|      |   9   |   6   |   9   |   2   |       |   5   |          |            |
++------+-------+-------+-------+-------+-------+-------+----------+------------+
+----------------------------------------------------------------------
+Accuracy on test set before training: 59.504
+
+[1,  2000] loss: 1.379
+[1,  4000] loss: 1.372
+[1,  6000] loss: 1.363
+[1,  8000] loss: 1.351
+[1, 10000] loss: 1.320
+Accuracy on dev set:74.555
+=> Saving a new best. Epoch: 1
