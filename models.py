@@ -554,7 +554,7 @@ class Model16(torch.nn.Module):
         y_pred=self.sigmoid(self.l4(out))
         return y_pred
     
- #1 hidden layer
+
 class Model17(torch.nn.Module):
     def __init__(self):
         super(Model17,self).__init__()
@@ -855,3 +855,22 @@ class Model23(nn.Module):
         x = F.relu(self.fc1(x))
         return F.sigmoid(self.fc2(x))
     
+class Model24(torch.nn.Module):
+    def __init__(self):
+        super(Model24,self).__init__()
+        self.l1 = torch.nn.Linear(_spw*_nmuscles,1024)
+        self.l2 = torch.nn.Linear(1024,1024)
+        self.l3 = torch.nn.Linear(1024,512)
+        self.l4 = torch.nn.Linear(512,256)
+        self.l5 = torch.nn.Linear(256,128)
+        self.l6 = torch.nn.Linear(128,1)
+        self.sigmoid = torch.nn.Sigmoid()
+        
+    def forward(self,x):
+        out = F.relu(self.l1(x))
+        out = F.relu(self.l2(out))
+        out = F.relu(self.l3(out))
+        out = F.relu(self.l4(out))
+        out = F.relu(self.l5(out))
+        y_pred=self.sigmoid(self.l6(out))
+        return y_pred

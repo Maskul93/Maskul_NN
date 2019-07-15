@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[403]:
+# In[1]:
 
 ##Import libraries
 import torch
@@ -24,15 +24,15 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 
-# In[604]:
+# In[2]:
 
 ##SETTINGS
 doTrain = True
 doEval = True
 doExtractBaso = False
 
-nfold = 23 #number of folds to train
-fold_offset = 1
+nfold = 17 #number of folds to train
+fold_offset = 6
 lr=0.01 #learning rate
 
 batch_size = 32
@@ -60,6 +60,7 @@ exclude_features = True
 include_only_features = False
 #Features to selected/deselected for input to the networks
 features_select = [9, 10] #1 to 4
+#features_select = [3, 4, 7, 8, 9, 10] #1 to 4
 
 #Select which models to run. Insert comma separated values into 'model_select' var.
 #List. 0:'FF', 1:'FC2', 2:'FC2DP', 3:'FC3', 4:'FC3dp', 5:'Conv1d', 6:'MultiConv1d' 
@@ -69,8 +70,9 @@ features_select = [9, 10] #1 to 4
 # FF6 per testarlo potente dopo (17)
 model_lst = ['FF','FC2','FC2DP','FC3','FC3dp','Conv1d','MultiConv1d',
              'MultiConv1d_2','MultiConv1d_3', 'MultiConv1d_4', 'MultiConv1d_5', 
-             'FF2', 'CNN1', 'FF3', 'FF4', 'CNN2', 'FF5', 'FF6', 'CNN3', 'CNN1-FF5', 'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60']
-model_select = [14] 
+             'FF2', 'CNN1', 'FF3', 'FF4', 'CNN2', 'FF5', 'FF6', 'CNN3', 'CNN1-FF5', 
+             'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60', 'FF7']
+model_select = [24] 
 
 #Early stop settings
 maxepoch = 100
@@ -81,7 +83,7 @@ use_gputil = False
 cuda_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-# In[605]:
+# In[3]:
 
 #CUDA
 
@@ -102,13 +104,13 @@ if use_gputil and torch.cuda.is_available():
     
 
 
-# In[606]:
+# In[4]:
 
 print('Is CUDA available? --> ' + str(torch.cuda.is_available()))
 print('Cuda Device: ' + str(cuda_device))
 
 
-# In[607]:
+# In[5]:
 
 #Seeds
 def setSeeds(seed):
@@ -119,7 +121,7 @@ def setSeeds(seed):
 setSeeds(0)
 
 
-# In[608]:
+# In[6]:
 
 #Prints header of beautifultable report for each fold
 def header(model_list,nmodel,nfold,traindataset,testdataset, testdataset_U):
@@ -135,7 +137,7 @@ def header(model_list,nmodel,nfold,traindataset,testdataset, testdataset_U):
     print('Testset (U) fold' + str(i) + ' shape: ' + str(shape[0])+ 'x' + str((shape[1]+1)) +'\n')
 
 
-# In[609]:
+# In[7]:
 
 #Prints actual beautifultable for each fold
 def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_dev):
@@ -149,7 +151,7 @@ def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_d
     print(table)
 
 
-# In[610]:
+# In[8]:
 
 #Saves best model state on disk for each fold
 def save_checkpoint (state, is_best, filename, logfile):
@@ -164,7 +166,7 @@ def save_checkpoint (state, is_best, filename, logfile):
         logfile.write(msg + "\n")
 
 
-# In[611]:
+# In[9]:
 
 #Compute sklearn metrics: Recall, Precision, F1-score
 def pre_rec (loader, model, positiveLabel):
@@ -184,7 +186,7 @@ def pre_rec (loader, model, positiveLabel):
     return round(precision*100,3), round(recall*100,3), round(f1_score*100,3)
 
 
-# In[612]:
+# In[10]:
 
 #Calculates model accuracy. Predicted vs Correct.
 def accuracy (loader, model):
@@ -201,7 +203,7 @@ def accuracy (loader, model):
     return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
 
 
-# In[613]:
+# In[11]:
 
 #Arrays to store metrics
 accs = np.empty([nfold,1])
@@ -236,7 +238,7 @@ def stds (vals):
     return stds
 
 
-# In[614]:
+# In[12]:
 
 ## -- Salva il basografico predetto su un file sfruttando l'accuracy
 
@@ -274,11 +276,11 @@ def save_predicted_baso(loader, model, subject_predict, model_select, num_fold):
         predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
 
 
-# In[615]:
+# In[13]:
 
 ## -- Salva il basografico predetto su un file sfruttando l'accuracy
 
-def save_predicted_baso_sliding(loader, model, subject_predict, model_select, num_fold):
+def save_predicted_baso_slide(loader, model, subject_predict, model_select, num_fold):
     print("predicting baso for subject " + str(subject_predict) + " ... ")
     windows_length = 20
     predicted_baso_windowed = []
@@ -348,7 +350,7 @@ def save_predicted_baso_sliding(loader, model, subject_predict, model_select, nu
         predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
 
 
-# In[616]:
+# In[14]:
 
 #Shuffle
 def dev_shuffle (shuffle_train,shuffle_test,val_split,traindataset,testdataset):
@@ -414,7 +416,7 @@ def split_train ( val_split, traindataset ):
     return tr_sampler, d_sampler
 
 
-# In[617]:
+# In[15]:
 
 #Loads and appends all folds all at once
 trainfolds = []    # Train set
@@ -478,14 +480,16 @@ print('\nEach window is composed by ' + str(len(traindata.columns)) + ' samples.
 print('The number of muscles is ' + str(nmuscles))
 
 
-# In[618]:
+# In[3117]:
 
 ## -- Carica il soggetto su cui vuoi predire il basografico
 
 nmuscles = 10
-subject_predict = 1
+subject_predict = 26
 #directory_windows = '../subjects/min-max/windows_20/tr-False_sliding_1_c-False/'
-directory_windows = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/'
+#directory_windows = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/'
+directory_windows = 'subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/'
+
 subj_prefix = 's'
 subj_suffix = '_norm_windows_20.csv'
 file = directory_windows + subj_prefix + str(subject_predict) + subj_suffix
@@ -525,7 +529,7 @@ if doExtractBaso:
         print('The number of muscles is ' + str(nmuscles))
 
 
-# In[619]:
+# In[16]:
 
 nmuscles=int((len(traindata.columns)-1)/spw) #used for layer dimensions and stride CNNs
 #trainfolds = None
@@ -534,7 +538,7 @@ nmuscles=int((len(traindata.columns)-1)/spw) #used for layer dimensions and stri
 #gc.collect()
 
 
-# In[620]:
+# In[17]:
 
 import models
 from models import *
@@ -543,7 +547,7 @@ models._nmuscles = nmuscles
 models._batch_size = batch_size
 
 
-# In[621]:
+# In[18]:
 
 print(models._nmuscles)
 
@@ -560,7 +564,7 @@ def testdimensions():
 #testdimensions()
 
 
-# In[622]:
+# In[19]:
 
 fieldnames = ['Fold','Acc_L', 'Acc_U',
               'R_0_U','R_1_U',
@@ -721,7 +725,7 @@ def train_test():
                                 #print(msg)
                                 #logfile.write(msg + "\n")        
                         accdev = (accuracy(dev_loader, model))
-                        msg = 'Accuracy on dev set:' + '%.3f' %(accdev)
+                        msg = 'Accuracy on dev set:' + str(accdev)
                         print(msg)
                         logfile.write(msg + "\n")        
                         is_best = bool(accdev > best_acc_dev)
@@ -875,7 +879,7 @@ def train_test():
         
 
 
-# In[623]:
+# In[ ]:
 
 nmuscles=int((len(traindata.columns)-1)/spw)
 if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available():
@@ -885,11 +889,6 @@ if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available
 else:
     print('I am NOT using CUDA: SUCCESS!')
     train_test()
-
-
-# In[ ]:
-
-
 
 
 # In[ ]:
