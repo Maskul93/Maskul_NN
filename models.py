@@ -874,3 +874,32 @@ class Model24(torch.nn.Module):
         out = F.relu(self.l5(out))
         y_pred=self.sigmoid(self.l6(out))
         return y_pred
+
+#LSTM
+class Model25(torch.nn.Module):
+    def __init__(self):
+        super(Model25,self).__init__()
+        self.lstm = nn.LSTM(_nmuscles, 32, bidirectional=True)
+        self.l1 = torch.nn.Linear(1280,1)
+        self.sigmoid = torch.nn.Sigmoid()
+        
+    def forward(self,x):
+        batch_size = x.size(0)
+        out, _ = self.lstm(x.view(_spw,batch_size,-1))
+        #print(out.shape)
+        out = self.l1(out.view(batch_size,-1))
+        y_pred=self.sigmoid(out)
+        return y_pred
+    
+class Model26(torch.nn.Module):
+    def __init__(self):
+        super(Model26,self).__init__()
+        self.l1 = torch.nn.Linear(_spw*_nmuscles,10)
+        self.l2 = torch.nn.Linear(10,1)
+        self.sigmoid = torch.nn.Sigmoid()
+        
+    def forward(self,x):
+        #print(out.shape)
+        out = self.l1(x)
+        y_pred=self.sigmoid(self.l2(out))
+        return y_pred
