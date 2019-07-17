@@ -42,7 +42,7 @@ test_val_split = 0.1 #trainset percentage allocated for test_val set (i.e. the t
 #cwd = os.getcwd()
 #cwd = "subjects/min-max/windows_20/tr-False_sliding_1_c-False/folds_inter_no_4_24_25/"
 #cwd = "subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/folds_inter/"
-cwd = "subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
+cwd = "subjects/bpf-20-450/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
 
 subject = 1 # serve per caricare le folds da cartelle diverse
 prefix_train = 'TrainFold'
@@ -902,7 +902,7 @@ def train_test():
         
 
 
-# In[ ]:
+# In[ ]:as
 
 nmuscles=int((len(traindata.columns)-1)/spw)
 if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available():
