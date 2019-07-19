@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[55]:
+# In[1]:
 
 ##Import libraries
 import torch
@@ -24,7 +24,7 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 
 
-# In[98]:
+# In[25]:
 
 ##SETTINGS
 doTrain = True
@@ -42,13 +42,17 @@ test_val_split = 0.1 #trainset percentage allocated for test_val set (i.e. the t
 #cwd = os.getcwd()
 #cwd = "subjects/min-max/windows_20/tr-False_sliding_1_c-False/folds_inter_no_4_24_25/"
 #cwd = "subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/folds_inter/"
-cwd = "subjects/bpf-20-450/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
+cwd = "subjects/bpf-20-450_rect/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
+#cwd = "subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-1/folds_inter/"
+#cwd = "subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
+#cwd = "subjects/min-max/clean/windows_200-del_tr-True-slide-False-digits-3/folds_inter/"
+
 
 subject = 1 # serve per caricare le folds da cartelle diverse
 prefix_train = 'TrainFold'
 prefix_test = 'TestFold'
 
-#spw=20 #samples per window
+#spw=200 #samples per window
 #nmuscles=10 #initial number of muscles acquired
 
 spw=1 #samples per window
@@ -77,8 +81,8 @@ features_select = [] #1 to 4
 model_lst = ['FF','FC2','FC2DP','FC3','FC3dp','Conv1d','MultiConv1d',
              'MultiConv1d_2','MultiConv1d_3', 'MultiConv1d_4', 'MultiConv1d_5', 
              'FF2', 'CNN1', 'FF3', 'FF4', 'CNN2', 'FF5', 'FF6', 'CNN3', 'CNN1-FF5', 
-             'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60', 'FF7', 'LSTM1', 'BAS']
-model_select = [26,16] 
+             'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60', 'FF7', 'LSTM1', 'BAS-10', "BAS-40"]
+model_select = [16] 
 
 #Early stop settings
 maxepoch = 100
@@ -89,7 +93,7 @@ use_gputil = False
 cuda_device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-# In[99]:
+# In[3]:
 
 #CUDA
 
@@ -110,13 +114,13 @@ if use_gputil and torch.cuda.is_available():
     
 
 
-# In[100]:
+# In[4]:
 
 print('Is CUDA available? --> ' + str(torch.cuda.is_available()))
 print('Cuda Device: ' + str(cuda_device))
 
 
-# In[101]:
+# In[5]:
 
 #Seeds
 def setSeeds(seed):
@@ -127,7 +131,7 @@ def setSeeds(seed):
 setSeeds(0)
 
 
-# In[102]:
+# In[6]:
 
 #Prints header of beautifultable report for each fold
 def header(model_list,nmodel,nfold,traindataset,testdataset, testdataset_U):
@@ -143,7 +147,7 @@ def header(model_list,nmodel,nfold,traindataset,testdataset, testdataset_U):
     print('Testset (U) fold' + str(i) + ' shape: ' + str(shape[0])+ 'x' + str((shape[1]+1)) +'\n')
 
 
-# In[103]:
+# In[7]:
 
 #Prints actual beautifultable for each fold
 def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_dev):
@@ -157,7 +161,7 @@ def table(model_list,nmodel,accuracies,precisions,recalls,f1_scores,accuracies_d
     print(table)
 
 
-# In[104]:
+# In[8]:
 
 #Saves best model state on disk for each fold
 def save_checkpoint (state, is_best, filename, logfile):
@@ -172,7 +176,7 @@ def save_checkpoint (state, is_best, filename, logfile):
         logfile.write(msg + "\n")
 
 
-# In[105]:
+# In[9]:
 
 #Compute sklearn metrics: Recall, Precision, F1-score
 def pre_rec (loader, model, positiveLabel):
@@ -192,7 +196,7 @@ def pre_rec (loader, model, positiveLabel):
     return round(precision*100,3), round(recall*100,3), round(f1_score*100,3)
 
 
-# In[106]:
+# In[10]:
 
 #Calculates model accuracy. Predicted vs Correct.
 def accuracy (loader, model):
@@ -209,7 +213,7 @@ def accuracy (loader, model):
     return round((100 * correct / total),3)    # Tira fuori la percentuale di accuracy
 
 
-# In[107]:
+# In[11]:
 
 #Arrays to store metrics
 accs = np.empty([nfold,1])
@@ -244,7 +248,7 @@ def stds (vals):
     return stds
 
 
-# In[108]:
+# In[12]:
 
 ## -- Salva il basografico predetto su un file sfruttando l'accuracy
 
@@ -287,7 +291,7 @@ def save_predicted_baso_naive(loader, model, subject_predict, model_select, num_
         predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
 
 
-# In[109]:
+# In[13]:
 
 ## -- Salva il basografico predetto su un file sfruttando l'accuracy
 
@@ -295,6 +299,8 @@ def save_predicted_baso(loader, model, subject_predict, model_select, num_fold):
     print("predicting baso for subject " + str(subject_predict) + " ... ")
     #windows_length = 20
     windows_length = 200
+    pace = 20
+    
     predicted_baso_windowed = []
     with torch.no_grad():
         
@@ -310,60 +316,52 @@ def save_predicted_baso(loader, model, subject_predict, model_select, num_fold):
         predicted_baso_windowed = pd.DataFrame(predicted_baso_windowed)    # Converto in DataFrame
         predicted_baso_windowed = predicted_baso_windowed.as_matrix()
         
+        print("NN predicitons on sliding wondows: ")
+        print(predicted_baso_windowed)
         limit = len(predicted_baso_windowed)
+        number_of_samples = (limit-1)*pace+windows_length
+        print("Number of sliding windows: " + str(limit))
+        print("Number of samples in a window: " + str(windows_length))
+        print("Number of samples: " + str(number_of_samples))
         
-        samples_predictions = np.empty([limit  + windows_length - 1,windows_length], dtype = int)
-        for i in range(0,limit  + windows_length - 1):
-            for j in range(0,windows_length):
-                samples_predictions[i,j] = -1
+        samples_predictions = np.zeros(number_of_samples, dtype = int)
 
-        count = 0
-        for j in range(0, limit):
-            '''
-            sliding_window_prediction = np.empty([windows_length,1], dtype = int)
-            sliding_window_prediction[0:windows_length] = predicted_baso_windowed[j]
-            indent = "wp:    "
-            for i in range(0,j):
-                indent += "  "
-            print(indent + str(sliding_window_prediction.squeeze()))
-            count += windows_length
-            '''
-            for i in range(0, windows_length):
-                if (j+i < len(samples_predictions)):
-                    samples_predictions[j+i][windows_length-i-1] = predicted_baso_windowed[j]
+        for w in range(0,limit):
+            if (predicted_baso_windowed[w]==0):
+                add = -1
+            elif (predicted_baso_windowed[w]==1):
+                add = 1    
+            for s in range(w*pace, w*pace + windows_length):
+                samples_predictions[s] += add
 
-        #il seguente è un vettore di vettori in cui ogni elemento è composto 
-        #da tutte le predizioni delle finestre che comprendono il campione. 
-        # il valore -1 indica assenza di predizione, perchè i primi e gli ultimi campioni sono compresi in meno finestre
         print("\nSamples predictions:")
         print(samples_predictions)
 
         #Per ogni campione la predizione vincente sarà il massimo tra gli 1 e gli 0 predetti
-        predicted_baso = np.empty([limit  + windows_length - 1,1], dtype = int)
+        predicted_baso = np.zeros(number_of_samples, dtype = int)
         count = 0
         for sample_pred in samples_predictions:
-            zeros = len(np.where(sample_pred==0)[0])
-            ones = len(np.where(sample_pred==1)[0])
-            if (zeros > ones):
-                predicted_baso[count] = 0
-            elif (zeros < ones): 
+            if (sample_pred > 0):
                 predicted_baso[count] = 1
+            elif (sample_pred < 0): 
+                predicted_baso[count] = 0
             else:
-                predicted_baso[count] = not predicted_baso[count-1]
+                predicted_baso[count] = predicted_baso[count-1]
             #print("0:" + str(zeros), "1:" + str(ones), str(predicted_baso[count]))
             count += 1
+
             
         predicted_baso = pd.DataFrame(predicted_baso)
         #out_path = 'subjects/min-max/windows_20-del_tr-False-slide-False-digits-4/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
         #out_path = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
-        out_path = 'subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-1/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
+        out_path = 'subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/Report_' + str(model_select) + '/Fold_' + str(num_fold) + '/' 
         if not os.path.exists(out_path):
             os.makedirs(out_path)
         #np.savetxt(out_path + 's' + str(subject_predict) + '_predicted.csv', predicted_baso, delimiter = ",")
         predicted_baso = predicted_baso.to_csv(out_path + 's' + str(subject_predict) + '_predicted.csv', index = None, header = None)
 
 
-# In[110]:
+# In[14]:
 
 #Shuffle
 def dev_shuffle (shuffle_train,shuffle_test,val_split,traindataset,testdataset):
@@ -429,7 +427,7 @@ def split_train ( val_split, traindataset ):
     return tr_sampler, d_sampler
 
 
-# In[111]:
+# In[15]:
 
 #Loads and appends all folds all at once
 trainfolds = []    # Train set
@@ -495,12 +493,12 @@ print('\nEach window is composed by ' + str(len(traindata.columns)) + ' samples.
 print('The number of muscles is ' + str(nmuscles))
 
 
-# In[90]:
+# In[16]:
 
 traindata[:10]
 
 
-# In[92]:
+# In[17]:
 
 ## -- Carica il soggetto su cui vuoi predire il basografico
 
@@ -509,11 +507,11 @@ subject_predict = 1
 #directory_windows = '../subjects/min-max/windows_20/tr-False_sliding_1_c-False/'
 #directory_windows = 'subjects/min-max/clean/windows_20-del_tr-False-slide-True-digits-3-pace-1/'
 #directory_windows = 'subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/'
-directory_windows = 'subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-1/'
+directory_windows = 'subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-20/'
 
 subj_prefix = 's'
 #subj_suffix = '_norm_windows_20.csv'
-subj_suffix = '_norm_windows_200_features.csv'
+subj_suffix = '_norm_windows_200.csv'
 file = directory_windows + subj_prefix + str(subject_predict) + subj_suffix
 
 if doExtractBaso:
@@ -521,21 +519,21 @@ if doExtractBaso:
         for j in range(fold_offset,fold_offset + nfold):
             testfolds_U = []
 
-        #for i in range(spw*nmuscles,200):
-        #    col_select = np.append(col_select,i)
+        for i in range(spw*nmuscles,200):
+            col_select = np.append(col_select,i)
 
-#         for i in range (0,spw*nmuscles,nmuscles):
-#             for muscle in features_select:
-#                 col_select = np.append(col_select,muscle -1 + i)
-#             cols=np.arange(0,spw*nmuscles+1)
+        for i in range (0,spw*nmuscles,nmuscles):
+            for muscle in features_select:
+                 col_select = np.append(col_select,muscle -1 + i)
+            cols=np.arange(0,spw*nmuscles+1)
         
-#        cols = [i for i in range(0,201)]
-        cols = [i for i in range(0,41)]
+        cols = [i for i in range(0,2001)]
+#        cols = [i for i in range(0,41)]
         
         col_select = []
-#        for i in range(0,200,nmuscles):
-#            col_select.append(8 + i)
-#            col_select.append(9 + i)
+        for i in range(0,200,nmuscles):
+            col_select.append(8 + i)
+            col_select.append(9 + i)
         
         cols = np.asarray(cols)
         col_select = np.asarray(col_select)
@@ -552,7 +550,7 @@ if doExtractBaso:
         print('The number of muscles is ' + str(nmuscles))
 
 
-# In[112]:
+# In[18]:
 
 nmuscles=int((len(traindata.columns)-1)/spw) #used for layer dimensions and stride CNNs
 #trainfolds = None
@@ -561,7 +559,7 @@ nmuscles=int((len(traindata.columns)-1)/spw) #used for layer dimensions and stri
 #gc.collect()
 
 
-# In[113]:
+# In[19]:
 
 import models
 from models import *
@@ -570,7 +568,7 @@ models._nmuscles = nmuscles
 models._batch_size = batch_size
 
 
-# In[114]:
+# In[20]:
 
 print(models._nmuscles)
 
@@ -587,7 +585,7 @@ def testdimensions():
 #testdimensions()
 
 
-# In[115]:
+# In[21]:
 
 fieldnames = ['Fold','Acc_L', 'Acc_U',
               'R_0_U','R_1_U',
@@ -902,7 +900,7 @@ def train_test():
         
 
 
-# In[ ]:as
+# In[ ]:
 
 nmuscles=int((len(traindata.columns)-1)/spw)
 if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available():
@@ -912,6 +910,11 @@ if use_cuda and not use_gputil and cuda_device!=None and torch.cuda.is_available
 else:
     print('I am NOT using CUDA: SUCCESS!')
     train_test()
+
+
+# In[ ]:
+
+
 
 
 # In[ ]:
