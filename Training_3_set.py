@@ -42,7 +42,7 @@ test_val_split = 0.1 #trainset percentage allocated for test_val set (i.e. the t
 #cwd = os.getcwd()
 #cwd = "subjects/min-max/windows_20/tr-False_sliding_1_c-False/folds_inter_no_4_24_25/"
 #cwd = "subjects/min-max/clean/windows_20-del_tr-True-slide-False-digits-3/folds_inter/"
-cwd = "subjects/bpf-20-450_rect/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
+cwd = "subjects/bpf-20-450/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
 #cwd = "subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-1/folds_inter/"
 #cwd = "subjects/min-max/clean/windows_200-del_tr-False-slide-True-digits-3-pace-20/folds_inter/"
 #cwd = "subjects/min-max/clean/windows_200-del_tr-True-slide-False-digits-3/folds_inter/"
@@ -82,7 +82,7 @@ model_lst = ['FF','FC2','FC2DP','FC3','FC3dp','Conv1d','MultiConv1d',
              'MultiConv1d_2','MultiConv1d_3', 'MultiConv1d_4', 'MultiConv1d_5', 
              'FF2', 'CNN1', 'FF3', 'FF4', 'CNN2', 'FF5', 'FF6', 'CNN3', 'CNN1-FF5', 
              'CNN1-2','CNN1-1', 'CNN1-3', 'CNN_w60', 'FF7', 'LSTM1', 'BAS-10', "BAS-40"]
-model_select = [16] 
+model_select = [17] 
 
 #Early stop settings
 maxepoch = 100
